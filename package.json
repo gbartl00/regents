@@ -1,0 +1,10 @@
+{
+  "name": "regents-bootstrap-preview",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "check": "node --check app.js && node --check server.cjs",
+    "audit:serve": "node audit/server.cjs"
+  }
+}
