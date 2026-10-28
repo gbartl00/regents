@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Board of Regents for the Oklahoma Agricultural and Mechanical Colleges. Static HTML reference for the Squiz build.">
+  <title>Home | OSU/A&amp;M Board of Regents</title>
+  <link rel="icon" href="assets/p1-6.png">
+
+  <!-- SHARED DESIGN ASSETS: keep these links in the Squiz site-wide head. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/vendor/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Static reference: all homepage markup is in this file. app.js is not used.
+       Static home, directory, and profile links stay within the static pages.
+       Other content links and search open the original index.html prototype.
+       For Squiz, replace local URLs with the appropriate CMS asset URLs. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- BEGIN SHARED HEADER: site identity, search, and primary navigation. -->
+  <header id="header">
+    <div class="masthead">
+      <div class="container-wide">
+        <div class="brand-row">
+          <div class="brand">
+            <a class="brand-logo" href="index-static.html" aria-label="Board of Regents home">
+              <img src="assets/p1-6.png" alt="Oklahoma A&M Board of Regents seal">
+            </a>
+            <span class="brand-title">
+              <strong>
+                Board of Regents
+              </strong>
+              for the
+              <br>
+              Oklahoma Agricultural &amp; Mechanical Colleges
+            </span>
+          </div>
+          <form class="site-search" action="index.html" role="search">
+            <input type="hidden" name="page" value="search">
+            <label class="visually-hidden" for="site-query">
+              Search the website
+            </label>
+            <input class="form-control" type="search" id="site-query" name="q" placeholder="Search..." value="">
+            <button class="search-button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="4"/>
+                <path d="m15 15 7 7" stroke="currentColor" stroke-width="4"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Main menu">
+            ☰ &nbsp; Menu
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle " id="members-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="members-submenu">
+                  About Us
+                </button>
+                <ul class="dropdown-menu" id="members-submenu" aria-labelledby="members-toggle">
+                  <li>
+                    <a class="dropdown-item" href="members-static.html" >
+                      Board Members
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/mission-statement" >
+                      Mission Statement
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/committees" >
+                      Committees
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/councils" >
+                      Councils
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html?page=meetings">
+                  Upcoming Meetings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html?page=minutes">
+                  Minutes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html?page=policy">
+                  Policy Manual
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle " id="staff-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="staff-submenu">
+                  Staff
+                </button>
+                <ul class="dropdown-menu" id="staff-submenu" aria-labelledby="staff-toggle">
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/staff/exec-office-staff" >
+                      Executive/Administrative
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/staff/internal-audit-staff" >
+                      Office of Internal Audit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/staff/legal-counsel-staff" >
+                      Office of Legal Counsel
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://regents.okstate.edu/employment-opportunities" >
+                      Employment Opportunities
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html?page=contact">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- END SHARED HEADER -->
+
+  <!-- BEGIN PAGE CONTENT: the part replaced by the current Squiz page. -->
+  <main id="main" tabindex="-1" aria-label="Main content">
+    <!-- Homepage feature: board photo and introduction. -->
+    <section class="hero container-wide">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <img class="hero-photo" src="assets/p1-5.png" alt="2025–2026 OSU/A&M Board of Regents members standing together">
+        </div>
+        <div class="col-md-5 hero-copy">
+          <h1>
+            2025-2026 Members of the OSU/A&amp;M Board of Regents
+          </h1>
+          <p>
+            Guiding the future of the A&amp;M system, the Board of Regents brings together leaders dedicated to advancing education, research and service across the state.
+          </p>
+          <p>
+            From Left to Right: Billy G. Taylor, Member; Chris Franklin, Member; Jennifer Callahan, Member; Joe D. Hall, Member; Rick Walker, Chair; Cary Baetz, Vice Chair; Tracy Poole, Member; Blayne Arthur, Member; Jason Ramsey, Interim Chief Executive Officer
+          </p>
+          <p>
+            Not Pictured: Jimmy Harrel, Member
+          </p>
+          <a class="arrow-link" href="members-static.html">
+            Meet the members
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Homepage news: replace cards with a Squiz listing or editable components. -->
+    <section class="news" aria-labelledby="news-title">
+      <div class="container">
+        <h2 id="news-title">
+          News and Information
+        </h2>
+        <div class="row g-4 g-md-5 news-grid">
+          <div class="col-md-6">
+            <article class="news-card d-flex flex-column">
+              <h3>
+                Regents begin search for next president of Connors State College
+              </h3>
+              <p>
+                Guiding the future of the A&M system, the Board of Regents brings together leaders dedicated to advancing education, research and service across the state.
+              </p>
+              <a class="arrow-link" href="index.html?page=presidential-search">
+                Presidential search
+              </a>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="news-card d-flex flex-column">
+              <h3>
+                74 O.S. § 3106.4 Website Posting Requirements for Public Entities
+              </h3>
+              <p>
+                In accordance with 74 O.S. § 3106.4, the Board of Regents provides required public information online to support transparency, accountability, and public access.
+              </p>
+              <a class="arrow-link" href="index.html?page=compliance">
+                Compliance details
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Homepage meetings: replace cards with a Squiz date-sorted listing. -->
+    <section class="meetings-section container-wide" aria-labelledby="meetings-title">
+      <h2 id="meetings-title">
+        Upcoming Meetings
+      </h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <article class="meeting-card">
+            <time class="date-badge" datetime="2026-04-22">
+              <span class="date-day">
+                22
+              </span>
+              <span class="date-month">
+                April
+                <br>
+                2026
+              </span>
+            </time>
+            <h3>
+              <a class="meeting-link" href="index.html?page=meeting&amp;id=0">
+                Special Board Meeting
+                <span class="visually-hidden">
+                  on April 22, 2026
+                </span>
+              </a>
+            </h3>
+            <p>
+              1:30 PM
+              <br>
+              Hamm Institute for American Energy at OSU
+            </p>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="meeting-card">
+            <time class="date-badge" datetime="2026-04-24">
+              <span class="date-day">
+                24
+              </span>
+              <span class="date-month">
+                April
+                <br>
+                2026
+              </span>
+            </time>
+            <h3>
+              <a class="meeting-link" href="index.html?page=meeting&amp;id=1">
+                Regular Board Meeting
+                <span class="visually-hidden">
+                  on April 24, 2026
+                </span>
+              </a>
+            </h3>
+            <p>
+              10:00 AM
+              <br>
+              Northeastern Oklahoma A&M College
+            </p>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="meeting-card">
+            <time class="date-badge" datetime="2026-06-12">
+              <span class="date-day">
+                12
+              </span>
+              <span class="date-month">
+                June
+                <br>
+                2026
+              </span>
+            </time>
+            <h3>
+              <a class="meeting-link" href="index.html?page=meeting&amp;id=2">
+                Regular Board Meeting
+                <span class="visually-hidden">
+                  on June 12, 2026
+                </span>
+              </a>
+            </h3>
+            <p>
+              10:00 AM
+              <br>
+              Hamm Institute for American Energy at OSU
+            </p>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="meeting-card">
+            <time class="date-badge" datetime="2026-09-11">
+              <span class="date-day">
+                11
+              </span>
+              <span class="date-month">
+                Sept
+                <br>
+                2026
+              </span>
+            </time>
+            <h3>
+              <a class="meeting-link" href="index.html?page=meeting&amp;id=3">
+                Regular Board Meeting
+                <span class="visually-hidden">
+                  on Sept 11, 2026
+                </span>
+              </a>
+            </h3>
+            <p>
+              10:00 AM
+              <br>
+              Hamm Institute for American Energy at OSU
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="all-meetings">
+        <a class="btn btn-primary" href="index.html?page=meetings">
+          ALL UPCOMING
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- END PAGE CONTENT -->
+
+  <!-- BEGIN SHARED INSTITUTION STRIP -->
+  <section id="institutions" aria-labelledby="institutions-title">
+    <div class="institutions">
+      <div class="container-wide">
+        <h2 id="institutions-title">
+          Oklahoma A&amp;M Institutions
+        </h2>
+        <div class="institution-logos">
+          <a href="https://connorsstate.edu/" aria-label="Connors State College">
+            <img src="assets/p1-4.png" alt="Connors State College" loading="lazy">
+          </a>
+          <a href="https://langston.edu/" aria-label="Langston University">
+            <img src="assets/p1-2.png" alt="Langston University" loading="lazy">
+          </a>
+          <a href="https://neo.edu/" aria-label="NEO A&M College">
+            <img src="assets/p1-1.png" alt="NEO A&M College" loading="lazy">
+          </a>
+          <a href="https://opsu.edu/" aria-label="Oklahoma Panhandle State University">
+            <img src="assets/p1-3.png" alt="Oklahoma Panhandle State University" loading="lazy">
+          </a>
+          <a href="https://okstate.edu/" aria-label="Oklahoma State University">
+            <img src="assets/p1-0.png" alt="Oklahoma State University" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SHARED INSTITUTION STRIP -->
+
+  <!-- BEGIN SHARED FOOTER: contact details, institution links, and accessibility. -->
+  <footer id="footer">
+    <div class="footer">
+      <div class="container-wide">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>
+              OSU/ A&amp;M REGENTS
+            </h2>
+            <address>
+              900 N. PORTLAND AVENUE
+              <br>
+              OKLAHOMA CITY, OK 73107
+              <br>
+              PH:
+              <a href="tel:+14059453263">
+                405-945-3263
+              </a>
+              <br>
+              FAX: 405-945-3345
+              <br>
+              EMAIL:
+              <a href="mailto:board@okstate.edu">
+                BOARD@OKSTATE.EDU
+              </a>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <h2>
+              INSTITUTIONS
+            </h2>
+            <ul class="footer-links">
+              <li>
+                <a href="https://okstate.edu/">
+                  OSU - Stillwater
+                </a>
+              </li>
+              <li>
+                <a href="https://osuokc.edu/">
+                  OSU - Oklahoma City
+                </a>
+              </li>
+              <li>
+                <a href="https://tulsa.okstate.edu/">
+                  OSU - Tulsa
+                </a>
+              </li>
+              <li>
+                <a href="https://medicine.okstate.edu/">
+                  OSU Center for Health Sciences
+                </a>
+              </li>
+              <li>
+                <a href="https://osuit.edu/">
+                  OSU Institute of Technology
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="visually-hidden">
+              More institutions
+            </h2>
+            <ul class="footer-links pt-md-4">
+              <li>
+                <a href="https://connorsstate.edu/">
+                  Connors State College
+                </a>
+              </li>
+              <li>
+                <a href="https://langston.edu/">
+                  Langston University
+                </a>
+              </li>
+              <li>
+                <a href="https://neo.edu/">
+                  NEO A&M College
+                </a>
+              </li>
+              <li>
+                <a href="https://opsu.edu/">
+                  Oklahoma Panhandle State University
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 &nbsp; | &nbsp; ALL RIGHTS RESERVED
+          <br>
+          BOARD OF REGENTS FOR THE OKLAHOMA AGRICULTURAL AND MECHANICAL COLLEGES
+          <br>
+          <a href="index.html?page=ethics">
+            ETHICS POINT
+          </a>
+          <span class="footer-divider" aria-hidden="true">
+            ·
+          </span>
+          <a href="index.html?page=accessibility">
+            ACCESSIBILITY &amp; HELP
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END SHARED FOOTER -->
+
+  <!-- INTERACTIONS ONLY: Bootstrap handles dropdown/collapse toggles. This small
+       script preserves Escape/focus behavior. It does not render any content. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Keep the keyboard path predictable when a mobile menu is dismissed.
+      const menuButton=document.querySelector('.navbar-toggler');
+      const menuPanel=document.querySelector('#main-nav');
+      document.querySelector('.navbar').addEventListener('keydown',event=>{
+       const dropdown=event.target.closest('.dropdown');
+       const dropdownButton=dropdown?.querySelector('[data-bs-toggle="dropdown"]');
+       if(event.key==='Escape'&&dropdownButton?.getAttribute('aria-expanded')==='true'){
+        event.preventDefault();event.stopPropagation();
+        bootstrap.Dropdown.getOrCreateInstance(dropdownButton).hide();
+        dropdownButton.focus();
+        return;
+       }
+       if(event.key==='Escape'&&menuPanel.classList.contains('show')){
+        event.preventDefault();
+        bootstrap.Collapse.getOrCreateInstance(menuPanel,{toggle:false}).hide();
+        menuButton.focus();
+       }
+      });
+      window.matchMedia('(min-width: 992px)').addEventListener('change',event=>{
+       if(!event.matches&&menuPanel.contains(document.activeElement)&&!menuPanel.classList.contains('show')) menuButton.focus();
+      });
+      // Native fragment navigation also moves keyboard focus to the bypass destination.
+      document.querySelector('.skip-link').addEventListener('click',()=>document.querySelector('#main').focus());
+
+      // Reset nested disclosures when the surrounding mobile navigation is closed.
+      menuPanel.addEventListener('hide.bs.collapse',()=>{
+       document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(button=>{
+        bootstrap.Dropdown.getInstance(button)?.hide();
+       });
+      });
+    });
+  </script>
+</body>
+</html>

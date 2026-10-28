@@ -1,0 +1,330 @@
+[
+  {
+    "url": "http://localhost:3001/index-static.html?audit=1&",
+    "version": "4.10.3",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "time[datetime=\"2026-04-22\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-04-24\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-06-12\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-09-11\"] > .date-day"
+          ]
+        ]
+      }
+    ],
+    "passes": [
+      "aria-allowed-attr",
+      "aria-allowed-role",
+      "aria-conditional-attr",
+      "aria-deprecated-role",
+      "aria-hidden-body",
+      "aria-hidden-focus",
+      "aria-prohibited-attr",
+      "aria-required-attr",
+      "aria-roles",
+      "aria-valid-attr-value",
+      "aria-valid-attr",
+      "avoid-inline-spacing",
+      "button-name",
+      "bypass",
+      "color-contrast",
+      "document-title",
+      "duplicate-id-aria",
+      "empty-heading",
+      "form-field-multiple-labels",
+      "heading-order",
+      "html-has-lang",
+      "html-lang-valid",
+      "image-alt",
+      "image-redundant-alt",
+      "label-title-only",
+      "label",
+      "landmark-banner-is-top-level",
+      "landmark-contentinfo-is-top-level",
+      "landmark-main-is-top-level",
+      "landmark-no-duplicate-banner",
+      "landmark-no-duplicate-contentinfo",
+      "landmark-no-duplicate-main",
+      "landmark-one-main",
+      "landmark-unique",
+      "link-in-text-block",
+      "link-name",
+      "list",
+      "listitem",
+      "meta-viewport-large",
+      "meta-viewport",
+      "nested-interactive",
+      "page-has-heading-one",
+      "region",
+      "skip-link",
+      "tabindex",
+      "target-size"
+    ],
+    "overflow": false,
+    "headingCount": 1,
+    "imagesWithoutAlt": 0
+  },
+  {
+    "url": "http://localhost:3001/index-static.html?audit=1&dropdown=members",
+    "version": "4.10.3",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "time[datetime=\"2026-04-22\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-04-24\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-06-12\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-09-11\"] > .date-day"
+          ]
+        ]
+      }
+    ],
+    "passes": [
+      "aria-allowed-attr",
+      "aria-allowed-role",
+      "aria-conditional-attr",
+      "aria-deprecated-role",
+      "aria-hidden-body",
+      "aria-hidden-focus",
+      "aria-prohibited-attr",
+      "aria-required-attr",
+      "aria-roles",
+      "aria-valid-attr-value",
+      "aria-valid-attr",
+      "avoid-inline-spacing",
+      "button-name",
+      "bypass",
+      "color-contrast",
+      "document-title",
+      "duplicate-id-aria",
+      "empty-heading",
+      "form-field-multiple-labels",
+      "heading-order",
+      "html-has-lang",
+      "html-lang-valid",
+      "image-alt",
+      "image-redundant-alt",
+      "label-title-only",
+      "label",
+      "landmark-banner-is-top-level",
+      "landmark-contentinfo-is-top-level",
+      "landmark-main-is-top-level",
+      "landmark-no-duplicate-banner",
+      "landmark-no-duplicate-contentinfo",
+      "landmark-no-duplicate-main",
+      "landmark-one-main",
+      "landmark-unique",
+      "link-in-text-block",
+      "link-name",
+      "list",
+      "listitem",
+      "meta-viewport-large",
+      "meta-viewport",
+      "nested-interactive",
+      "page-has-heading-one",
+      "region",
+      "skip-link",
+      "tabindex",
+      "target-size"
+    ],
+    "overflow": false,
+    "headingCount": 1,
+    "imagesWithoutAlt": 0
+  },
+  {
+    "url": "http://localhost:3001/index-static.html?audit=1&",
+    "version": "4.10.3",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".col-md-6:nth-child(1) > .news-card.d-flex.flex-column > .arrow-link"
+          ],
+          [
+            "a[href=\"index.html?page=compliance\"]"
+          ],
+          [
+            "time[datetime=\"2026-04-22\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-04-24\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-06-12\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-09-11\"] > .date-day"
+          ]
+        ]
+      }
+    ],
+    "passes": [
+      "aria-allowed-attr",
+      "aria-allowed-role",
+      "aria-conditional-attr",
+      "aria-deprecated-role",
+      "aria-hidden-body",
+      "aria-hidden-focus",
+      "aria-prohibited-attr",
+      "aria-required-attr",
+      "aria-roles",
+      "aria-valid-attr-value",
+      "aria-valid-attr",
+      "avoid-inline-spacing",
+      "button-name",
+      "bypass",
+      "color-contrast",
+      "document-title",
+      "duplicate-id-aria",
+      "empty-heading",
+      "form-field-multiple-labels",
+      "heading-order",
+      "html-has-lang",
+      "html-lang-valid",
+      "image-alt",
+      "image-redundant-alt",
+      "label-title-only",
+      "label",
+      "landmark-banner-is-top-level",
+      "landmark-contentinfo-is-top-level",
+      "landmark-main-is-top-level",
+      "landmark-no-duplicate-banner",
+      "landmark-no-duplicate-contentinfo",
+      "landmark-no-duplicate-main",
+      "landmark-one-main",
+      "landmark-unique",
+      "link-in-text-block",
+      "link-name",
+      "list",
+      "listitem",
+      "meta-viewport-large",
+      "meta-viewport",
+      "nested-interactive",
+      "page-has-heading-one",
+      "region",
+      "skip-link",
+      "tabindex",
+      "target-size"
+    ],
+    "overflow": false,
+    "headingCount": 1,
+    "imagesWithoutAlt": 0
+  },
+  {
+    "url": "http://localhost:3001/index-static.html?audit=1&menu=1&dropdown=members",
+    "version": "4.10.3",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".col-md-6:nth-child(1) > .news-card.d-flex.flex-column > .arrow-link"
+          ],
+          [
+            "a[href=\"index.html?page=compliance\"]"
+          ],
+          [
+            "time[datetime=\"2026-04-22\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-04-24\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-06-12\"] > .date-day"
+          ],
+          [
+            "time[datetime=\"2026-09-11\"] > .date-day"
+          ]
+        ]
+      }
+    ],
+    "passes": [
+      "aria-allowed-attr",
+      "aria-allowed-role",
+      "aria-conditional-attr",
+      "aria-deprecated-role",
+      "aria-hidden-body",
+      "aria-hidden-focus",
+      "aria-prohibited-attr",
+      "aria-required-attr",
+      "aria-roles",
+      "aria-valid-attr-value",
+      "aria-valid-attr",
+      "avoid-inline-spacing",
+      "button-name",
+      "bypass",
+      "color-contrast",
+      "document-title",
+      "duplicate-id-aria",
+      "empty-heading",
+      "form-field-multiple-labels",
+      "heading-order",
+      "html-has-lang",
+      "html-lang-valid",
+      "image-alt",
+      "image-redundant-alt",
+      "label-title-only",
+      "label",
+      "landmark-banner-is-top-level",
+      "landmark-contentinfo-is-top-level",
+      "landmark-main-is-top-level",
+      "landmark-no-duplicate-banner",
+      "landmark-no-duplicate-contentinfo",
+      "landmark-no-duplicate-main",
+      "landmark-one-main",
+      "landmark-unique",
+      "link-in-text-block",
+      "link-name",
+      "list",
+      "listitem",
+      "meta-viewport-large",
+      "meta-viewport",
+      "nested-interactive",
+      "page-has-heading-one",
+      "region",
+      "skip-link",
+      "tabindex",
+      "target-size"
+    ],
+    "overflow": false,
+    "headingCount": 1,
+    "imagesWithoutAlt": 0
+  }
+]

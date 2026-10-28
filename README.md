@@ -63,3 +63,25 @@ The visual treatment uses white panels, blue top borders, underlined links, visi
 Follow-up validation: 14 axe-core scans of collapsed/open states at 1280px and 320px, including both dropdowns with doubled root text and WCAG text spacing, found zero automated violations and zero horizontal document overflows. Keyboard checks verified Enter, Space, Arrow Down, Tab dismissal, and nested Escape/focus behavior. Fixed minimum submenu widths and news-link text wrapping for combined narrow-width/large-text stress. Raw results: `audit/dropdown-results.json`. Screenshot previews: `audit/about-dropdown.jpg` and `audit/staff-dropdown.jpg`.
 
 The earlier 73-scan report remains a historical snapshot of the prior version. These 14 follow-up scans cover the navigation change; full university conformance sign-off still requires the manual checks listed above.
+
+## Static HTML reference for the Squiz build
+
+Open `http://localhost:3000/index-static.html` after running `npm start`. This second homepage includes the complete header, menus, main sections, institution strip, and footer directly in its HTML source. It does not load `app.js`. Source comments label the shared sections and the homepage-specific content so they can be separated into Squiz templates and editable areas.
+
+It shares the existing CSS, fonts, images, and Bootstrap files. The small script at the end of the HTML handles menu accessibility only. Links and search point to `index.html` for the existing prototype's other pages; replace those destinations with Squiz asset URLs during integration.
+
+Static-page checks: four axe scans across 1280px and 320px, with the About Us dropdown closed/open, found zero automated violations and no horizontal document overflow. Verified the nested Escape/focus behavior and that the server response itself contains all page content without a content-rendering script. These targeted checks are not a new full-site conformance review. Results are in `audit/static-results.json`.
+
+## Complete static page set
+
+The three PDF layouts are available as editable HTML references:
+
+- `index-static.html`: homepage.
+- `members-static.html`: nine-member directory.
+- `member-static.html`: Blayne Arthur's profile, matching the PDF's individual-profile example.
+
+The other eight directory entries also have complete static pages named `member-<member-id>-static.html`. Static home, directory, profile, and breadcrumb links connect this set. Search and the other prototype sections still open `index.html`.
+
+Every static page includes its own header, content, institution strip, footer, and accessibility interaction script. Shared section comments identify the parts to move into Squiz templates. The existing styles, fonts, images, and Bootstrap files are shared; no page loads `app.js` to render content.
+
+Validation of the complete set: 26 axe scans across all 11 pages at 1280px and 320px, plus open About Us dropdown states on directory/profile pages, found no automated violations and no horizontal document overflow. Confirmed directory-to-profile navigation and that every local asset/link target exists. Raw results: `audit/static-suite-results.json`. As with earlier reviews, automated checks do not establish full WCAG conformance.
