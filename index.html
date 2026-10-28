@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple Bootstrap website for Regents.">
+    <title>Regents</title>
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-sm bg-white border-bottom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Regents</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#getting-started">Get started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-5">
+      <section class="py-5" aria-labelledby="welcome">
+        <span class="badge text-bg-primary mb-3">Welcome to Regents</span>
+        <h1 class="display-4 fw-bold" id="welcome">A simple place to start.</h1>
+        <p class="lead text-secondary col-lg-8">A clean, responsive website built with Bootstrap. Make it your own, one idea at a time.</p>
+        <a class="btn btn-primary btn-lg mt-2" href="#getting-started">Get started</a>
+      </section>
+      <div class="row g-4">
+        <section class="col-md-6" id="about" aria-labelledby="about-title">
+          <div class="card h-100 shadow-sm"><div class="card-body p-4">
+            <h2 class="h4" id="about-title">Built for the basics</h2>
+            <p class="text-secondary mb-0">A straightforward layout with room for your content. It adapts to phones, tablets, and desktop screens.</p>
+          </div></div>
+        </section>
+        <section class="col-md-6" id="getting-started" aria-labelledby="start-title">
+          <div class="card h-100 shadow-sm"><div class="card-body p-4">
+            <h2 class="h4" id="start-title">Make it yours</h2>
+            <p class="text-secondary mb-0">Start with your message, add your content, and shape this page around what matters to you.</p>
+          </div></div>
+        </section>
+      </div>
+    </main>
+    <footer class="container py-4 border-top text-secondary"><small>Regents · Built with Bootstrap</small></footer>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
