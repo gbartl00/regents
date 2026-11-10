@@ -1,0 +1,50 @@
+[
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=accordion",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=dialog",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=drawer",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=accordion",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=dialog",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "overflow": false,
+    "route": "http://localhost:3001/components.html?audit=1&component=drawer",
+    "violations": [],
+    "width": 320
+  }
+]

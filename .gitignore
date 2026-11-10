@@ -7,3 +7,4 @@ tmp/
 .agents/
 .DS_Store
 Thumbs.db
+.cloudflare/

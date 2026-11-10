@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node server.cjs",
-    "check": "node --check app.js && node --check server.cjs",
-    "audit:serve": "node audit/server.cjs"
+    "check": "node --check app.js && node --check server.cjs && node --check scripts/build-static.cjs && node --check components.js",
+    "audit:serve": "node audit/server.cjs",
+    "build:cloudflare": "npm run build:static && node scripts/build-cloudflare.mjs",
+    "deploy": "npm run check && npm run build:cloudflare && cf deploy --prebuilt",
+    "build:static": "node scripts/build-static.cjs"
   }
 }

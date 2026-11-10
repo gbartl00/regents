@@ -4,10 +4,26 @@ Bootstrap 5.3.3 recreation of the supplied three-page PDF, with a responsive hom
 
 Run `npm start` (or `node server.cjs`) and open http://localhost:3000.
 
+## Cloudflare deployment
+
+Live site: https://regents-website.greg-0a9.workers.dev
+
+The `regents-website` Worker serves static assets. Deployment settings are in
+`cloudflare-deployment.json`. With the Cloudflare `cf` CLI installed and signed in,
+run `npm run deploy` from this folder to check, package, and publish the site.
+The setup was verified with `cf` 1.0.0-beta.14.
+
+`npm run build:cloudflare` prepares Cloudflare's prebuilt output under
+`.cloudflare/output/v0/`. Only the root HTML pages, `app.js`, `styles.css`, and
+`assets/` are included. Local servers, audit files, temporary files, and deployment
+configuration stay out of the published assets. The prebuilt deployment path
+does not require a framework build or Wrangler configuration.
+
 All Bootstrap files, fonts, photos, and logos are stored locally. No install step is needed.
 
 The design reference supplies the member details and 2026 meeting dates. Those details are reproduced as supplied and are not verified as current. Missing minutes, policy documents, staff details, article details, and the Ethics Point destination are clearly marked in the preview. No forms send data and no backend is connected.
 
+Source: C:\Users\gbart\Downloads\Regents Reface+.pdf
 
 ## Accessibility review (October 27, 2026)
 
@@ -85,3 +101,62 @@ The other eight directory entries also have complete static pages named `member-
 Every static page includes its own header, content, institution strip, footer, and accessibility interaction script. Shared section comments identify the parts to move into Squiz templates. The existing styles, fonts, images, and Bootstrap files are shared; no page loads `app.js` to render content.
 
 Validation of the complete set: 26 axe scans across all 11 pages at 1280px and 320px, plus open About Us dropdown states on directory/profile pages, found no automated violations and no horizontal document overflow. Confirmed directory-to-profile navigation and that every local asset/link target exists. Raw results: `audit/static-suite-results.json`. As with earlier reviews, automated checks do not establish full WCAG conformance.
+
+## Component theme authority (November 9, 2026)
+
+`regents-components.css` is an unchanged copy of the supplied component stylesheet
+and is the authority for palette, typography, and component styling. Load it after
+Bootstrap and font definitions, and before `styles.css`. The latter supplies only
+site-shell, page-specific, and accessibility integration styles. Update the source
+theme in `regents-components.css`; do not reintroduce the previous palette or heading
+sizes in `styles.css`.
+
+The content landmark is `#main-content`. The homepage uses `banner__*`, `news__*`,
+`events__*`, and `features__*` conventions; the member directory uses `cards__*`.
+All supplied styles, including unused accordion, tab, gallery, video, dialog, and
+drawer styles, are available without adding empty components to the website.
+Actual section headings replace the stylesheet's decorative generated labels.
+
+Run `npm run build:static` to regenerate the static reference pages from the same
+markup as the interactive site. `npm run deploy` includes this step automatically.
+`site-navigation.js` is generated alongside those pages for their menu and skip-link
+behavior. The theme retains its supplied Google Fonts imports; existing local font
+files are also retained as fallback. The previous implementation is backed up under
+`tmp/before-component-theme/`, which is excluded from deployment.
+## Interactive component examples
+
+Open `components.html` (or `index.html?page=components`) for working accordion,
+modal dialog, and bottom modal drawer examples using the supplied component
+class names. `components.js` is the reusable behavior layer; `styles.css` adds
+only modal positioning, close controls, and drawer motion to the supplied theme.
+
+For an accordion, wrap heading buttons and their panels in `[data-accordion]`.
+Each `.accordion__heading-button` needs `aria-controls` pointing to its panel ID;
+its panel needs `aria-labelledby` pointing to the button ID. The script synchronizes
+`aria-expanded` and `hidden`. Add `data-start-open` to start a panel expanded.
+Answers remain readable if JavaScript is unavailable.
+
+For a dialog or drawer, use a native `<dialog data-component-modal>` with an ID
+and `aria-labelledby` referencing its visible title. An opener uses
+`data-modal-open="dialog-id"`, `aria-controls="dialog-id"`, `aria-haspopup="dialog"`,
+and `aria-expanded="false"`. Close buttons use `data-modal-close`. Keep the modal
+inside `#main-content` so the supplied component styles apply. Load `components.js`
+with `defer` after the markup or after the script that renders it.
+
+The script contains Tab and Shift+Tab focus cycling, Escape and backdrop dismissal,
+background scroll locking, and focus restoration. The drawer slides up from the bottom, uses the viewport width, and scrolls internally on smaller screens. Drawer links are ordinary links.
+Reduced-motion preferences disable the slide-in animation. No additional JavaScript
+library is needed for these three components. The page retains the existing shared
+Bootstrap navigation separately.
+## Footer options for review
+
+`footer-options.html` compares three alternatives based on the supplied
+`alt options-bottom logo lockup.pdf`: blue frame, light-gray frame, and individual
+white logo tiles on gray. Each uses the supplied full-color school marks.
+The existing black-logo band remains the default.
+
+Preview alternatives in the full homepage using `index.html?footer=1`,
+`index.html?footer=2`, or `index.html?footer=3` (optionally add `#institutions-title`).
+The comparison page links to these previews. Options are URL-specific and do not
+save or change the selected default. The main page generator shares the same
+lockup renderer with the comparison page so the previews stay consistent.

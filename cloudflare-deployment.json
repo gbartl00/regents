@@ -1,0 +1,15 @@
+{
+  "accountId": "40a9801a4742d760ea44c759b59400f8",
+  "worker": {
+    "name": "regents-website",
+    "compatibilityDate": "2026-11-08",
+    "workersDev": true,
+    "assets": { "htmlHandling": "auto-trailing-slash", "notFoundHandling": "none" },
+    "observability": {
+      "enabled": true,
+      "logs": { "enabled": true, "invocationLogs": true },
+      "traces": { "enabled": true, "headSamplingRate": 0.1 },
+      "redactQueryString": true
+    }
+  }
+}

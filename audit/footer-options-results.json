@@ -1,0 +1,84 @@
+[
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=1&audit=1",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=2&audit=1",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=3&audit=1",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "defaultBlackLogos": [
+      "assets/logos/connors-state-black.svg",
+      "assets/logos/langston-black.png",
+      "assets/logos/neo-black.svg",
+      "assets/logos/opsu-black.svg",
+      "assets/logos/osu-black.svg"
+    ],
+    "overflow": false,
+    "url": "http://localhost:3001/?audit=1",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=1&audit=1",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=2&audit=1",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "defaultBlackLogos": [],
+    "overflow": false,
+    "url": "http://localhost:3001/?footer=3&audit=1",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "defaultBlackLogos": [
+      "assets/logos/connors-state-black.svg",
+      "assets/logos/langston-black.png",
+      "assets/logos/neo-black.svg",
+      "assets/logos/opsu-black.svg",
+      "assets/logos/osu-black.svg"
+    ],
+    "overflow": false,
+    "url": "http://localhost:3001/?audit=1",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "headingSize": "40px",
+    "overflow": false,
+    "url": "http://localhost:3001/footer-options.html?audit=1",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "overflow": false,
+    "url": "http://localhost:3001/footer-options.html?audit=1",
+    "violations": [],
+    "width": 320
+  }
+]

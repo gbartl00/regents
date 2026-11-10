@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Board of Regents for the Oklahoma Agricultural and Mechanical Colleges. Meet the Regents, explore meetings, and connect with the Board.">
+<title>Interactive components | OSU/A&amp;M Board of Regents</title>
+<link rel="icon" href="assets/p1-6.png"><link rel="stylesheet" href="assets/vendor/bootstrap.min.css"><link rel="stylesheet" href="assets/vendor/fonts.css"><link rel="stylesheet" href="regents-components.css"><link rel="stylesheet" href="styles.css">
+<script defer src="assets/vendor/bootstrap.bundle.min.js"></script><script defer src="site-navigation.js"></script><script defer src="components.js"></script>
+</head>
+<body><a class="skip-link" href="#main-content">Skip to content</a><header id="header"><div class="masthead"><div class="regents-container"><div class="brand-row"><div class="brand"><a class="brand-logo" href="index-static.html" aria-label="Board of Regents home"><img src="assets/p1-6.png" alt="Oklahoma A&M Board of Regents seal"></a><span class="brand-title"><strong>Board of Regents</strong> for the<br>Oklahoma Agricultural &amp; Mechanical Colleges</span></div><form class="site-search" action="index.html" role="search"><input type="hidden" name="page" value="search"><label class="visually-hidden" for="site-query">Search the website</label><input class="form-control" type="search" id="site-query" name="q" placeholder="Search..." value=""><button class="search-button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="m15 15 7 7" stroke="currentColor" stroke-width="4"/></svg></button></form></div><nav class="navbar navbar-expand-lg" aria-label="Main navigation"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Main menu">☰ &nbsp; Menu</button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav"><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="members-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="members-submenu">About Us</button><ul class="dropdown-menu" id="members-submenu" aria-labelledby="members-toggle"><li><a class="dropdown-item" href="members-static.html" >Board Members</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/mission-statement" >Mission Statement</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/committees" >Committees</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/councils" >Councils</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=meetings">Upcoming Meetings</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=minutes">Minutes</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=policy">Policy Manual</a></li><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="staff-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="staff-submenu">Staff</button><ul class="dropdown-menu" id="staff-submenu" aria-labelledby="staff-toggle"><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/exec-office-staff" >Executive/Administrative</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/internal-audit-staff" >Office of Internal Audit</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/legal-counsel-staff" >Office of Legal Counsel</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/employment-opportunities" >Employment Opportunities</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=contact">Contact Us</a></li></ul></div></nav></div></div></header><main id="main-content" tabindex="-1" aria-label="Main content"><nav class="breadcrumb-band" aria-label="Breadcrumb"><ol class="regents-container breadcrumb-list"><li><a href="index-static.html">Home</a></li><li aria-current="page">Component examples</li></ol></nav><section class="content-page regents-container component-demo-intro">
+  <p class="component-eyebrow">Component examples</p>
+  <h1>Interactive components</h1>
+  <p>Explore three ways to reveal more information. Select an accordion heading, open a dialog, or slide out a drawer.</p>
+</section>
+<section class="accordion" aria-labelledby="accordion-title">
+  <div class="component-inner">
+    <p class="component-eyebrow">01 / Expand in place</p>
+    <h2 id="accordion-title">Accordion</h2>
+    <p>Reveal an answer without leaving the page. Each section opens independently.</p>
+    <div data-accordion>
+      <div class="accordion__item">
+        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-purpose" aria-expanded="true" aria-controls="accordion-purpose-panel" type="button">When would I use an accordion?</button></h3>
+        <div class="accordion__body" id="accordion-purpose-panel" role="region" aria-labelledby="accordion-purpose">
+          <p>An accordion keeps related information together while letting visitors choose which details to read. It works well for frequently asked questions, meeting guidance, and supporting information.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-keyboard" aria-expanded="true" aria-controls="accordion-keyboard-panel" type="button">Can I use the keyboard?</button></h3>
+        <div class="accordion__body" id="accordion-keyboard-panel" role="region" aria-labelledby="accordion-keyboard">
+          <p>Yes. Use Tab to reach a heading, then press Enter or Space to open or close its answer. Tab also reaches any links within an open section.</p>
+          <p><a href="index.html?page=accessibility">Read our accessibility information</a></p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-multiple" aria-expanded="true" aria-controls="accordion-multiple-panel" type="button">Can more than one answer stay open?</button></h3>
+        <div class="accordion__body" id="accordion-multiple-panel" role="region" aria-labelledby="accordion-multiple">
+          <p>Yes. Open several sections to compare their contents, and close each one when you are finished.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="dialog regents-bg-gray" aria-labelledby="dialog-example-title">
+  <div class="component-inner">
+    <p class="component-eyebrow">02 / Open a focused window</p>
+    <h2 id="dialog-example-title">Dialog</h2>
+    <p>A dialog appears over the page when a short message needs your attention.</p>
+    <button class="dialog__button" type="button" data-modal-open="example-dialog" aria-controls="example-dialog" aria-haspopup="dialog" aria-expanded="false">Open dialog</button>
+    <dialog class="dialog__modal" id="example-dialog" data-component-modal aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <button class="component-close" type="button" data-modal-close aria-label="Close dialog" autofocus><span aria-hidden="true">×</span></button>
+      <p class="component-eyebrow">Dialog example</p>
+      <h2 id="dialog-title">A moment of focus</h2>
+      <p id="dialog-description">This window keeps a short message in focus while the page waits in the background.</p>
+      <p>Close it with either button, press Escape, or select the shaded background. You will return to the button that opened it.</p>
+      <button class="dialog__button" type="button" data-modal-close>Back to examples</button>
+    </dialog>
+  </div>
+</section>
+<section class="drawer" aria-labelledby="drawer-example-title">
+  <div class="component-inner">
+    <p class="component-eyebrow">03 / Slide up for more</p>
+    <h2 id="drawer-example-title">Drawer</h2>
+    <p>A drawer slides up from the bottom to hold related information or useful links.</p>
+    <button class="drawer__trigger-button" type="button" data-modal-open="example-drawer" aria-controls="example-drawer" aria-haspopup="dialog" aria-expanded="false">Open drawer</button>
+    <dialog class="drawer-modal" id="example-drawer" data-component-modal aria-labelledby="drawer-title" aria-describedby="drawer-description">
+      <button class="component-close" type="button" data-modal-close aria-label="Close drawer" autofocus><span aria-hidden="true">×</span></button>
+      <p class="component-eyebrow">Drawer example</p>
+      <h2 id="drawer-title">More to explore</h2>
+      <p id="drawer-description">Keep supporting information close at hand in a panel that opens from the bottom of the page.</p>
+      <h3>Explore the Regents site</h3>
+      <ul class="component-drawer-links">
+        <li><a href="members-static.html">Meet the Regents</a></li>
+        <li><a href="index.html?page=meetings">View the meeting reference</a></li>
+        <li><a href="index.html?page=contact">Contact the Board</a></li>
+      </ul>
+      <p>Press Escape or use a close button to return to the examples.</p>
+      <button class="dialog__button" type="button" data-modal-close>Close panel</button>
+    </dialog>
+  </div>
+</section>
+<section class="features institutions" aria-labelledby="institutions-title"><div class="component-inner"><h2 id="institutions-title">Oklahoma A&amp;M Institutions</h2><div class="features__list institution-logos"><a class="features__item features__icon__wrapper" href="https://connorsstate.edu/" aria-label="Connors State College"><img class="features__icon" src="assets/logos/connors-state-black.svg" alt="Connors State College" loading="lazy"></a><a class="features__item features__icon__wrapper" href="https://langston.edu/" aria-label="Langston University"><img class="features__icon" src="assets/logos/langston-black.png" alt="Langston University" loading="lazy"></a><a class="features__item features__icon__wrapper" href="https://neo.edu/" aria-label="NEO A&M College"><img class="features__icon" src="assets/logos/neo-black.svg" alt="NEO A&M College" loading="lazy"></a><a class="features__item features__icon__wrapper" href="https://opsu.edu/" aria-label="Oklahoma Panhandle State University"><img class="features__icon" src="assets/logos/opsu-black.svg" alt="Oklahoma Panhandle State University" loading="lazy"></a><a class="features__item features__icon__wrapper" href="https://okstate.edu/" aria-label="Oklahoma State University"><img class="features__icon" src="assets/logos/osu-black.svg" alt="Oklahoma State University" loading="lazy"></a></div></div></section></main><footer id="footer"><div class="footer dashboard-footer"><div class="regents-container"><div class="row"><div class="col-md-4"><h2>OSU/ A&amp;M REGENTS</h2><address>900 N. PORTLAND AVENUE<br>OKLAHOMA CITY, OK 73107<br>PH: <a href="tel:+14059453263">405-945-3263</a><br>FAX: 405-945-3345<br>EMAIL: <a href="mailto:board@okstate.edu">BOARD@OKSTATE.EDU</a></address></div><div class="col-md-4"><h2>INSTITUTIONS</h2><ul class="footer-links"><li><a href="https://okstate.edu/">OSU - Stillwater</a></li><li><a href="https://osuokc.edu/">OSU - Oklahoma City</a></li><li><a href="https://tulsa.okstate.edu/">OSU - Tulsa</a></li><li><a href="https://medicine.okstate.edu/">OSU Center for Health Sciences</a></li><li><a href="https://osuit.edu/">OSU Institute of Technology</a></li></ul></div><div class="col-md-4"><h2 class="visually-hidden">More institutions</h2><ul class="footer-links pt-md-4"><li><a href="https://connorsstate.edu/">Connors State College</a></li><li><a href="https://langston.edu/">Langston University</a></li><li><a href="https://neo.edu/">NEO A&M College</a></li><li><a href="https://opsu.edu/">Oklahoma Panhandle State University</a></li></ul></div></div><div class="footer-bottom">© 2026 &nbsp; | &nbsp; ALL RIGHTS RESERVED<br>BOARD OF REGENTS FOR THE OKLAHOMA AGRICULTURAL AND MECHANICAL COLLEGES<br><a href="index.html?page=ethics">ETHICS POINT</a><span class="footer-divider" aria-hidden="true"> · </span><a href="index.html?page=accessibility">ACCESSIBILITY &amp; HELP</a></div></div></div></footer></body>
+</html>
