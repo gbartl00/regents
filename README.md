@@ -153,9 +153,9 @@ Bootstrap navigation separately.
 `footer-options.html` compares three alternatives based on the supplied
 `alt options-bottom logo lockup.pdf`: blue frame, light-gray frame, and individual
 white logo tiles on gray. Each uses the supplied full-color school marks.
-Option 3, individual white logo tiles on gray, is the default across the interactive site and generated static pages.
+Option 2, a white logo band with a light-gray border, is the default across the interactive site and generated static pages.
 
 Preview alternatives in the full homepage using `index.html?footer=1`,
 `index.html?footer=2`, or `index.html?footer=3` (optionally add `#institutions-title`).
-The comparison page links to these previews. Preview overrides are URL-specific; missing or invalid options use option 3. The main page generator shares the same
+The comparison page links to these previews. Preview overrides are URL-specific; missing or invalid options use option 2. The main page generator shares the same
 lockup renderer with the comparison page so the previews stay consistent.

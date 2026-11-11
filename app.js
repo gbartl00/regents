@@ -26,7 +26,7 @@ const footerOptions = [
 ];
 const colorInstitutionLogos = ['connors-state-color.svg','langston-color.png','neo-color.svg','opsu-color.svg','osu-color.svg'];
 const institutionLockup = (option, id = 'institutions-title', heading = 'h2') => `<section class="footer-lockup footer-lockup--${option}" aria-labelledby="${heading === 'h3' ? `option-${option} ${id}` : id}"><div class="footer-lockup__inner"><${heading} id="${id}" class="footer-lockup__heading">Oklahoma A&amp;M Institutions</${heading}><div class="footer-lockup__logos">${institutions.map(([name,,url],index)=>`<a href="${url}" aria-label="${name}"><img src="assets/logos/${colorInstitutionLogos[index]}" alt="${name}" loading="lazy"></a>`).join('')}</div></div></section>`;
-const selectedFooter = footerOptions.find(option => option.id === params.get('footer')) || footerOptions.find(option => option.id === '3');
+const selectedFooter = footerOptions.find(option => option.id === params.get('footer')) || footerOptions.find(option => option.id === '2');
 
 const href=(p,extra='')=>`?page=${p}${extra}`;
 const nav=[['About Us','members'],['Upcoming Meetings','meetings'],['Minutes','minutes'],['Policy Manual','policy'],['Staff','staff'],['Contact Us','contact']];
