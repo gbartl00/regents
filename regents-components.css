@@ -8,16 +8,16 @@
 #main-content section,#main-content details{margin:0}
 body{font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:400}
 h1,h2,h6{font-family:"Oswald", sans-serif;line-height:1.25}
-h1{font-size:3rem;font-weight:700}
-h2{font-size:2.5rem;font-weight:700}
+h1{font-size:2.5rem;font-weight:700}
+h2{font-size:2.25rem;font-weight:700}
 h6{font-size:1.25rem;font-weight:400}
 h3,h4,h5{font-family:"Open Sans",sans-serif;line-height:1.25}
 h3{font-size:1.5rem;font-weight:700}
 h4{font-size:1.25rem;font-weight:600}
 h5{font-size:1.25rem;font-weight:500}
 #main-content :is(h1,h2,h3,h4,h5,h6){color:var(--regents-ink);letter-spacing:normal}
-#main-content h1{font-size:3rem;font-weight:700}
-#main-content h2{font-size:2.5rem;font-weight:700}
+#main-content h1{font-size:2.5rem;font-weight:700}
+#main-content h2{font-size:2.25rem;font-weight:700}
 #main-content h3{font-size:1.5rem;font-weight:700}
 #main-content h4{font-size:1.25rem;font-weight:600}
 #main-content h5{font-size:1.25rem;font-weight:500}
@@ -170,14 +170,14 @@ h5{font-size:1.25rem;font-weight:500}
   --regents-ink: var(--regents-black);
 }
 body { background: var(--regents-primary); color: var(--regents-black); font-family: 'Open Sans', sans-serif; font-size: 1rem; font-weight: 400; }
-h1 { font-family: 'Oswald', sans-serif; font-size: 3rem; font-weight: 700; }
-h2 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700; }
+h1 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700; }
+h2 { font-family: 'Oswald', sans-serif; font-size: 2.25rem; font-weight: 700; }
 h3 { font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 700; }
 h4 { font-family: 'Open Sans', sans-serif; font-size: 1.25rem; font-weight: 600; }
 h5 { font-family: 'Open Sans', sans-serif; font-size: 1.25rem; font-weight: 500; }
 h6 { font-family: 'Oswald', sans-serif; font-size: 1.25rem; font-weight: 400; }
 /* Component titles follow the site's semantic heading sizes; only intentional card-sized titles are smaller. */
-#main-content .banner__content-wrapper h2 { font-size: 2.5rem; font-weight: 700; }
+#main-content .banner__content-wrapper h2 { font-size: 2.25rem; font-weight: 700; }
 #main-content .banner__content-wrapper h3 { font-size: 1.5rem; font-weight: 700; }
 #main-content .news__heading, #main-content .cards__heading, #main-content .events__heading,
 #main-content .features__item__title { font-family: 'Open Sans', sans-serif; font-size: 1.25rem; font-weight: 700; line-height: 1.35; }

@@ -185,7 +185,7 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 .footer-lockup__inner { max-width: var(--regents-max); margin-inline: auto; padding: 3rem 2rem; border: 8px solid transparent; }
 .footer-lockup--1 .footer-lockup__inner { border-color: #3064b4; }
 .footer-lockup--2 .footer-lockup__inner { border-color: #ddd; }
-#main-content .footer-lockup__heading { font-family: 'Oswald',sans-serif; font-size: 2.5rem; line-height: 1.25; font-weight: 700; text-align: center; margin: 0 0 2.5rem; }
+#main-content .footer-lockup__heading { font-family: 'Oswald',sans-serif; font-size: 2.25rem; line-height: 1.25; font-weight: 700; text-align: center; margin: 0 0 2.5rem; }
 .footer-lockup__logos { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); align-items: center; gap: 1.5rem; }
 .footer-lockup__logos a { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 140px; padding: .5rem; }
 .footer-lockup__logos img { display: block; max-width: 100%; max-height: 110px; width: auto; height: auto; object-fit: contain; }
