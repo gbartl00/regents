@@ -28,7 +28,7 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
   z-index: -1;
   pointer-events: none;
   background: url('assets/logos/regents-seal-gray.svg') 36% -8px / clamp(30rem,44vw,58rem) auto no-repeat;
-  opacity: .5;
+  opacity: .3;
 }
 .brand-row { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 32px; }
 .brand { display: flex; flex: 1 1 32rem; min-width: 0; align-items: center; gap: 28px; color: var(--regents-ink); }
