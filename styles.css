@@ -134,6 +134,12 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 #main-content .dialog__modal h2, #main-content .drawer-modal h2 { padding-right: 2rem; margin-bottom: 1rem; }
 .component-close { position: absolute; top: .5rem; right: .5rem; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--regents-navy); font-size: 2rem; line-height: 1; cursor: pointer; }
 .component-close:hover { background: #eee; }
+/* Fit the supplied gallery and video dialogs within the viewport. */
+#main-content :is(.image-gallery__dialog,.video-modal__dialog) { width: min(90vw,850px); max-height: 85dvh; overflow: auto; }
+#main-content :is(.image-gallery__dialog-header,.video-modal__dialog-header,.dialog__header,.drawer-modal__header) { padding-right: 2rem; }
+#main-content .image-gallery__slider-img { display: block; max-width: 100%; max-height: 55dvh; object-fit: contain; margin-inline: auto; }
+#main-content :is(.swiper-button-prev,.swiper-button-next) { min-height: 44px; margin: .5rem .5rem .5rem 0; padding: .5rem 1rem; }
+#main-content .video-player__player-wrapper { aspect-ratio: 16 / 9; }
 #main-content .drawer-modal { position: fixed; inset: auto 0 0; margin: auto 0 0; width: 100%; max-width: 100%; height: auto; max-height: 85dvh; padding: 2rem max(1.5rem,calc((100vw - var(--regents-max))/2)); overflow-y: auto; overscroll-behavior: contain; }
 .component-drawer-links { list-style: none; padding: 0; margin-bottom: 2rem; }
 .component-drawer-links a { display: flex; align-items: center; min-height: 44px; padding-block: .75rem; border-bottom: 1px solid var(--regents-line); }

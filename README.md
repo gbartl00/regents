@@ -123,31 +123,12 @@ markup as the interactive site. `npm run deploy` includes this step automaticall
 behavior. The theme retains its supplied Google Fonts imports; existing local font
 files are also retained as fallback. The previous implementation is backed up under
 `tmp/before-component-theme/`, which is excluded from deployment.
-## Interactive component examples
+## Sample component page
 
-Open `components.html` (or `index.html?page=components`) for working accordion,
-modal dialog, and bottom modal drawer examples using the supplied component
-class names. `components.js` is the reusable behavior layer; `styles.css` adds
-only modal positioning, close controls, and drawer motion to the supplied theme.
+Open `components.html` (or `index.html?page=components`) for the complete kitchen sink supplied in `HTML-updated CSS.zip` (`regents.html`). The examples retain the supplied content and component classes inside the shared Regents header and footer. The supplied stylesheet matches the existing theme; the previously requested 1.125rem paragraph size remains in place.
 
-For an accordion, wrap heading buttons and their panels in `[data-accordion]`.
-Each `.accordion__heading-button` needs `aria-controls` pointing to its panel ID;
-its panel needs `aria-labelledby` pointing to the button ID. The script synchronizes
-`aria-expanded` and `hidden`. Add `data-start-open` to start a panel expanded.
-Answers remain readable if JavaScript is unavailable.
+`app.js` is the source for this page; `npm run build:static` regenerates its static HTML. `components.js` adapts the supplied accordion, dialog, drawer, tabs, gallery, and video controls to local JavaScript. It replaces the source page's external Matrix/Tabler scripts. Images and YouTube embeds keep the supplied external URLs. Gallery sizing and modal integration styles live in `styles.css`.
 
-For a dialog or drawer, use a native `<dialog data-component-modal>` with an ID
-and `aria-labelledby` referencing its visible title. An opener uses
-`data-modal-open="dialog-id"`, `aria-controls="dialog-id"`, `aria-haspopup="dialog"`,
-and `aria-expanded="false"`. Close buttons use `data-modal-close`. Keep the modal
-inside `#main-content` so the supplied component styles apply. Load `components.js`
-with `defer` after the markup or after the script that renders it.
-
-The script contains Tab and Shift+Tab focus cycling, Escape and backdrop dismissal,
-background scroll locking, and focus restoration. The drawer slides up from the bottom, uses the viewport width, and scrolls internally on smaller screens. Drawer links are ordinary links.
-Reduced-motion preferences disable the slide-in animation. No additional JavaScript
-library is needed for these three components. The page retains the existing shared
-Bootstrap navigation separately.
 ## Footer options for review
 
 `footer-options.html` compares three alternatives based on the supplied

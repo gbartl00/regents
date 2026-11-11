@@ -3,80 +3,728 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Board of Regents for the Oklahoma Agricultural and Mechanical Colleges. Meet the Regents, explore meetings, and connect with the Board.">
-<title>Interactive components | OSU/A&amp;M Board of Regents</title>
+<title>Regents Components Kitchen Sink | OSU/A&amp;M Board of Regents</title>
 <link rel="icon" href="assets/p1-6.png"><link rel="stylesheet" href="assets/vendor/bootstrap.min.css"><link rel="stylesheet" href="assets/vendor/fonts.css"><link rel="stylesheet" href="regents-components.css"><link rel="stylesheet" href="styles.css">
 <script defer src="assets/vendor/bootstrap.bundle.min.js"></script><script defer src="site-navigation.js"></script><script defer src="components.js"></script>
 </head>
-<body><a class="skip-link" href="#main-content">Skip to content</a><header id="header"><div class="masthead"><div class="regents-container"><div class="brand-row"><div class="brand"><a class="brand-logo" href="index-static.html" aria-label="Board of Regents home"><img src="assets/p1-6.png" alt="Oklahoma A&M Board of Regents seal"></a><span class="brand-title"><strong>Board of Regents</strong> for the<br>Oklahoma Agricultural &amp; Mechanical Colleges</span></div><form class="site-search" action="index.html" role="search"><input type="hidden" name="page" value="search"><label class="visually-hidden" for="site-query">Search the website</label><input class="form-control" type="search" id="site-query" name="q" placeholder="Search..." value=""><button class="search-button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="m15 15 7 7" stroke="currentColor" stroke-width="4"/></svg></button></form></div><nav class="navbar navbar-expand-lg" aria-label="Main navigation"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Main menu">☰ &nbsp; Menu</button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav"><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="members-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="members-submenu">About Us</button><ul class="dropdown-menu" id="members-submenu" aria-labelledby="members-toggle"><li><a class="dropdown-item" href="members-static.html" >Board Members</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/mission-statement" >Mission Statement</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/committees" >Committees</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/councils" >Councils</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=meetings">Upcoming Meetings</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=minutes">Minutes</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=policy">Policy Manual</a></li><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="staff-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="staff-submenu">Staff</button><ul class="dropdown-menu" id="staff-submenu" aria-labelledby="staff-toggle"><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/exec-office-staff" >Executive/Administrative</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/internal-audit-staff" >Office of Internal Audit</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/legal-counsel-staff" >Office of Legal Counsel</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/employment-opportunities" >Employment Opportunities</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=contact">Contact Us</a></li></ul></div></nav></div></div></header><main id="main-content" tabindex="-1" aria-label="Main content"><nav class="breadcrumb-band" aria-label="Breadcrumb"><ol class="regents-container breadcrumb-list"><li><a href="index-static.html">Home</a></li><li aria-current="page">Component examples</li></ol></nav><section class="content-page regents-container component-demo-intro">
-  <p class="component-eyebrow">Component examples</p>
-  <h1>Interactive components</h1>
-  <p>Explore three ways to reveal more information. Select an accordion heading, open a dialog, or slide out a drawer.</p>
-</section>
-<section class="accordion" aria-labelledby="accordion-title">
-  <div class="component-inner">
-    <p class="component-eyebrow">01 / Expand in place</p>
-    <h2 id="accordion-title">Accordion</h2>
-    <p>Reveal an answer without leaving the page. Each section opens independently.</p>
-    <div data-accordion>
-      <div class="accordion__item">
-        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-purpose" aria-expanded="true" aria-controls="accordion-purpose-panel" type="button">When would I use an accordion?</button></h3>
-        <div class="accordion__body" id="accordion-purpose-panel" role="region" aria-labelledby="accordion-purpose">
-          <p>An accordion keeps related information together while letting visitors choose which details to read. It works well for frequently asked questions, meeting guidance, and supporting information.</p>
+<body><a class="skip-link" href="#main-content">Skip to content</a><header id="header"><div class="masthead"><div class="regents-container"><div class="brand-row"><div class="brand"><a class="brand-logo" href="index-static.html" aria-label="Board of Regents home"><img src="assets/p1-6.png" alt="Oklahoma A&M Board of Regents seal"></a><span class="brand-title"><strong>Board of Regents</strong> for the<br>Oklahoma Agricultural &amp; Mechanical Colleges</span></div><form class="site-search" action="index.html" role="search"><input type="hidden" name="page" value="search"><label class="visually-hidden" for="site-query">Search the website</label><input class="form-control" type="search" id="site-query" name="q" placeholder="Search..." value=""><button class="search-button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="m15 15 7 7" stroke="currentColor" stroke-width="4"/></svg></button></form></div><nav class="navbar navbar-expand-lg" aria-label="Main navigation"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Main menu">☰ &nbsp; Menu</button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav"><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="members-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="members-submenu">About Us</button><ul class="dropdown-menu" id="members-submenu" aria-labelledby="members-toggle"><li><a class="dropdown-item" href="members-static.html" >Board Members</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/mission-statement" >Mission Statement</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/committees" >Committees</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/councils" >Councils</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=meetings">Upcoming Meetings</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=minutes">Minutes</a></li><li class="nav-item"><a class="nav-link "  href="index.html?page=policy">Policy Manual</a></li><li class="nav-item dropdown"><button class="nav-link dropdown-toggle " id="staff-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-controls="staff-submenu">Staff</button><ul class="dropdown-menu" id="staff-submenu" aria-labelledby="staff-toggle"><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/exec-office-staff" >Executive/Administrative</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/internal-audit-staff" >Office of Internal Audit</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/staff/legal-counsel-staff" >Office of Legal Counsel</a></li><li><a class="dropdown-item" href="https://regents.okstate.edu/employment-opportunities" >Employment Opportunities</a></li></ul></li><li class="nav-item"><a class="nav-link "  href="index.html?page=contact">Contact Us</a></li></ul></div></nav></div></div></header><main id="main-content" tabindex="-1" aria-label="Main content"><nav class="breadcrumb-band" aria-label="Breadcrumb"><ol class="regents-container breadcrumb-list"><li><a href="index-static.html">Home</a></li><li aria-current="page">Component examples</li></ol></nav><section class="content-page regents-container component-demo-intro"><h1>Regents Components Kitchen Sink</h1><p>Find out how to do all the things</p></section>
+        <div class="container-xl">
+            <div class="row row-deck row-cards">
+
+				<p>Accordion</p>
+
+        <section class="accordion" id="accordion__f700db02-3110-466c-94c9-3ac6f27b252c" data-component="collapsible">
+
+            <div class="accordion__item-wrapper">
+
+                            <div class="accordion__item ">
+                                <h3 class="accordion__heading">
+                                    <button type="button" data-click="collapsibleToggle" id="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-heading-0" aria-expanded="false" aria-controls="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-body-0" class="accordion__heading-button">Hello I'm an accordion</button>
+                                </h3>
+                                <div id="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-body-0" role="region" aria-labelledby="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-heading-0" class="accordion__body-wrapper">
+                                    <div class="accordion__body" aria-hidden="true" inert><div data-sq-field="componentContent.items[0].content"><p>And do I work? Only if you have the appropriate Javascript.<br /></p></div></div>
+                                </div>
+                            </div>
+                            <div class="accordion__item ">
+                                <h3 class="accordion__heading">
+                                    <button type="button" data-click="collapsibleToggle" id="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-heading-1" aria-expanded="false" aria-controls="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-body-1" class="accordion__heading-button">You don't have multiple items</button>
+                                </h3>
+                                <div id="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-body-1" role="region" aria-labelledby="accordion__f700db02-3110-466c-94c9-3ac6f27b252c-heading-1" class="accordion__body-wrapper">
+                                    <div class="accordion__body" aria-hidden="true" inert><div data-sq-field="componentContent.items[1].content"><p>You don't need an accordion.<br /></p></div></div>
+                                </div>
+                            </div>
+            </div>
+        </section>
+        <p>Banner</p>
+        <section class="banner" id="banner__060c8175-743d-47d8-828b-2ae8ba70470a">
+            <div class="banner__wrapper banner__wrapper--left-side">
+                <div data-sq-field="componentContent.image" class="banner__img-wrapper">
+                    <img class="banner__img" src="https://digitalassets.okstate.edu/transform/b478467e-7989-4328-84b3-ea930f9cf18e/NRD-Statue" alt="Photo of the Nancy Randolph Davis statue." loading="lazy" />
+                </div>
+                <div class="banner__content-wrapper">
+                    <div data-sq-field="componentContent.content">
+						<h2>Header of tile</h2>
+						<h3>Optional subhead</h3>
+						<p>This is the content field. It's a light wysiwyg field.</p></div>
+
+                    <div class="banner__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://google.com" draggable="false" class="banner__button" target="_self">Banner Link 1</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://okstate.edu" draggable="false" class="banner__button banner__button--secondary" target="_self">Optional Button Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p>Banner (alt)</p>
+        <section class="banner banner--secondary" id="banner-sec__f617a204-7d1c-4a0b-a7fe-d7a5e70b6048">
+            <div class="banner__wrapper banner__wrapper--right-side">
+                <div data-sq-field="componentContent.image" class="banner__img-wrapper">
+                    <img class="banner__img" src="https://digitalassets.okstate.edu/transform/a4a5d443-c48a-4694-8aa6-7cb5366f1da9/20260715_Griffith_Students_9-1" alt="Student in the community kitchen at Griffith community center" loading="lazy" />
+                </div>
+                <div class="banner__content-wrapper">
+                    <div data-sq-field="componentContent.content"><p>Banner (secondary color pattern) component. This is the content field.<br /></p></div>
+
+                    <div class="banner__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://google.com" draggable="false" class="banner__button" target="_self">Banner Link 1 (optional)</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://facebook.com" draggable="false" class="banner__button banner__button--secondary" target="_self">https://facebook.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+				<p>Img background banner</p>
+        <section data-sq-field="componentContent.image" class="banner banner--background banner--opacity" id="banner-bg__81a5eb21-d831-4ff8-9aad-28f59bf0506f" style="--banner-bi-bg-image: url(https://digitalassets.okstate.edu/transform/fa134816-2d67-4c31-82c7-d8bb2f8f8855/20260716_Commons_Lawn_Students3)">
+            <div class="banner__wrapper banner__wrapper--align-left">
+                <div class="banner__content-wrapper">
+                    <div data-sq-field="componentContent.content"><p>Banner with background image<br /></p></div>
+
+                    <div class="banner__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://google.com" draggable="false" class="banner__button" target="_self">Banner Link 1 (optional)</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://okstate.edu" draggable="false" class="banner__button banner__button--secondary" target="_self">Banner link 2 (optional)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+				<p>Blue text-only banner</p>
+        <section class="banner banner--text-only" id="banner-txt__f0bedb6c-570b-4808-a0a4-70de2eab5f15">
+            <div class="banner__wrapper banner__wrapper--align-center">
+                <div class="banner__content-wrapper">
+                    <div data-sq-field="componentContent.content"><p>Banner with text only (primary color option) - content field<br /></p></div>
+
+                    <div class="banner__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://example.com" draggable="false" class="banner__button" target="_self">Banner Link 1 (optional)</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://example.com" draggable="false" class="banner__button banner__button--secondary" target="_self">Banner Link 2 (optional)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+				<p>Gray text-only banner</p>
+        <section class="banner banner--secondary banner--text-only" id="banner-txt-sec__5f01f907-af30-4fba-963c-c4a4f1e4f285">
+            <div class="banner__wrapper banner__wrapper--align-left">
+                <div class="banner__content-wrapper">
+                    <div data-sq-field="componentContent.content"><p>Banner with text only (secondary color option)<br /></p></div>
+
+                    <div class="banner__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://google.com" draggable="false" class="banner__button" target="_self">Banner Link 1 (optional)</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://example.com" draggable="false" class="banner__button banner__button--secondary" target="_self">Banner Link 2 (optional)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<p>Cards</p>
+        <section class="cards" id="cards__79deb2f6-0e01-428c-a18d-66a0fbe7f567" style="--cards-item-per-row: 3">
+            <ul class="cards__wrapper">
+
+                <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[0].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/6fc37e3a-92f6-4ef5-81e0-0846d43a157e/20260715_Griffith_Students_7" alt="Students outside of Griffith Community Center on their laptops" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[0].title" class="cards__heading"><a href="https://example.com" class="cards__heading-link" target="_self">Card listing</a></h2>
+                            <div data-sq-field="componentContent.cards[0].description" class="cards__body">Card 1 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[0].categories[0]" class="cards__categories-item">category 1 (optional)</li><li data-sq-field="componentContent.cards[0].categories[1]" class="cards__categories-item">category 2 (optional)</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[0].link" class="cards__button" target="_self">
+                                    Card Link
+
+                                </span>
+                    </div>
+                </li>
+                <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[1].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/ad3893e1-6df2-43eb-9856-1c54bc552caa/Robotic-Exploration" alt="Stillwater, OK
+July 15, 2026" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[1].title" class="cards__heading"><a href="https://google.com" class="cards__heading-link" target="_self">Card 2</a></h2>
+                            <div data-sq-field="componentContent.cards[1].description" class="cards__body">Card 2 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[1].categories[0]" class="cards__categories-item">another optional category</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[1].link" class="cards__button" target="_self">
+                                    Card link
+
+                                </span>
+                    </div>
+                </li>
+				 <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[1].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/ad3893e1-6df2-43eb-9856-1c54bc552caa/Robotic-Exploration" alt="Stillwater, OK
+July 15, 2026" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[1].title" class="cards__heading"><a href="https://google.com" class="cards__heading-link" target="_self">Card 3</a></h2>
+                            <div data-sq-field="componentContent.cards[1].description" class="cards__body">Card 2 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[1].categories[0]" class="cards__categories-item">another optional category</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[1].link" class="cards__button" target="_self">
+                                    Card link
+
+                                </span>
+                    </div>
+                </li>
+				 <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[1].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/ad3893e1-6df2-43eb-9856-1c54bc552caa/Robotic-Exploration" alt="Stillwater, OK
+July 15, 2026" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[1].title" class="cards__heading"><a href="https://google.com" class="cards__heading-link" target="_self">Card 4</a></h2>
+                            <div data-sq-field="componentContent.cards[1].description" class="cards__body">Card 2 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[1].categories[0]" class="cards__categories-item">another optional category</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[1].link" class="cards__button" target="_self">
+                                    Card link
+
+                                </span>
+                    </div>
+                </li>
+				 <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[1].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/ad3893e1-6df2-43eb-9856-1c54bc552caa/Robotic-Exploration" alt="Stillwater, OK
+July 15, 2026" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[1].title" class="cards__heading"><a href="https://google.com" class="cards__heading-link" target="_self">Card 5</a></h2>
+                            <div data-sq-field="componentContent.cards[1].description" class="cards__body">Card 2 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[1].categories[0]" class="cards__categories-item">another optional category</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[1].link" class="cards__button" target="_self">
+                                    Card link
+
+                                </span>
+                    </div>
+                </li>
+				 <li class="cards__item">
+                    <div data-sq-field="componentContent.cards[1].image" class="cards__img-wrapper"><img class="cards__img" src="https://digitalassets.okstate.edu/transform/ad3893e1-6df2-43eb-9856-1c54bc552caa/Robotic-Exploration" alt="Stillwater, OK
+July 15, 2026" loading="lazy" /></div>
+                    <div class="cards__content-wrapper">
+                        <div class="cards__body-wrapper">
+                            <h2 data-sq-field="componentContent.cards[1].title" class="cards__heading"><a href="https://google.com" class="cards__heading-link" target="_self">Card 6</a></h2>
+                            <div data-sq-field="componentContent.cards[1].description" class="cards__body">Card 2 description</div>
+                            <ul aria-label="Card categories" class="cards__categories">
+                                        <li data-sq-field="componentContent.cards[1].categories[0]" class="cards__categories-item">another optional category</li>
+                          </ul>
+                        </div>
+
+                                <span data-sq-field="componentContent.cards[1].link" class="cards__button" target="_self">
+                                    Card link
+
+                                </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+				<p>Details</p>
+        <details class="details" open id="details__c72da8e1-cff1-493d-9652-8f0f31c8831a">
+            <summary class="details__title">
+                <span data-sq-field="componentContent.title" class="details__icon">Details component</span>
+            </summary>
+            <div data-sq-field="componentContent.content" class="details__content">
+                <p>Hello some content goes in here. it's a mini wysiwyg. Down below there's an checkbox to expand this by default. <br /></p>
+            </div>
+        </details>
+				<p>Open Modal</p>
+        <section class="dialog" id="dialog__9588c15f-06e9-40e2-9c11-6ea7f2a86dfa" data-component="dialog" tabindex="-1" data-open-button="dialog-unique-id-1234">
+            <button type="button" id="dialog-unique-id-1234" class="dialog__button" data-sq-field="componentSettings.openButtonTitle">Open dialog</button>
+            <dialog class="dialog__modal dialog--size-small" role="dialog" data-modal="dialogModal" aria-labelledby="dialog-heading-dialog__9588c15f-06e9-40e2-9c11-6ea7f2a86dfa">
+                <div class="dialog__modal-body" data-dialog-modal-body>
+                    <header class="dialog__header">
+                        <h1 data-sq-field="componentContent.title" class="dialog__header__title" id="dialog-heading-dialog__9588c15f-06e9-40e2-9c11-6ea7f2a86dfa">Dialog Box</h1>
+                        <button class="dialog__modal-button" type="button" data-dismiss="dialog" aria-label="Close dialog" tabindex="0">×</button>
+                    </header>
+                    <div data-sq-field="componentContent.content"><p>Hello I'm a dialog box.<br /></p></div>
+                    <footer class="dialog__footer">
+                        <button class="dialog__button" type="button" data-dismiss="dialog">Ok</button>
+                    </footer>
+                </div>
+            </dialog>
+        </section>
+				<p>Open Drawer</p>
+
+        <section class="drawer" id="unique-drawer-id-999" data-component="drawer" tabindex="-1">
+            <button class="drawer__trigger-button" type="button" aria-controls="drawer-modal-unique-drawer-id-999" aria-expanded="false" data-element="drawer-trigger-button">Drawer Button Text</button>
+            <dialog  id="drawer-modal-unique-drawer-id-999" class="drawer-modal drawer-modal--bottom-size-25" role="dialog" aria-labelledby="drawer-heading-unique-drawer-id-999" data-element="drawer-modal">
+                <div class="drawer-modal__body">
+                    <header class="drawer-modal__header">
+                        <h1 id="drawer-heading-unique-drawer-id-999" class="drawer-modal__header-title" data-sq-field="componentContent.drawerTitle">Drawer Title</h1>
+                        <button class="drawer-modal__header-button" type="button" aria-label="Close drawer" data-dismiss="dialog" tabindex="0" data-element="drawer-close-button">×</button>
+                    </header>
+                    <div class="drawer-modal__content" data-sq-field="componentContent.drawerContent" tabindex="0"><p>Drawer content. Rich text.<br /></p></div>
+                </div>
+            </dialog>
+        </section>
+				<p>Events (Not Dynamic)</p>
+        <section class="events" id="events__4e4e7f6e-da89-41e9-b634-81b80b0819ea" style="--events-item-per-row: 3">
+            <ul class="events__wrapper">
+
+                <li class="events__item">
+                    <div data-sq-field="componentContent.events[0].image" class="events__img-wrapper"><img class="events__img" src="https://digitalassets.okstate.edu/asset/3028044c-25ee-43ef-b51a-c7f7c3cc0394/thumbnail/webimage-20260716_Commons_Lawn_Students2" alt="Two students playing with a frisbee on the commons lawn" loading="lazy" /></div>
+                    <div class="events__content-wrapper">
+                        <div class="events__body-wrapper">
+                            <h2 data-sq-field="componentContent.events[0].title" class="events__heading"><a href="https://example.com" class="events__heading-link" target="_self">Event Title</a></h2>
+                            <div class="events__date-wrapper">
+                                <div class="events__date">
+                                    <span data-sq-field="componentContent.events[0].date" class="events__date-label">July 25th</span>
+                                </div>
+
+                                <div class="events__time">
+                                    <span data-sq-field="componentContent.events[0].time" class="events__date-label">4:00 P.M.</span>
+                                </div>
+
+                            </div>
+                            <div data-sq-field="componentContent.events[0].description" class="events__body">Event Description</div>
+
+                            <ul aria-label="Event categories" class="events__categories">
+                                <li data-sq-field="componentContent.events[0].categories[0]" class="events__categories-item">Category</li><li data-sq-field="componentContent.events[0].categories[1]" class="events__categories-item">Category 2</li>
+                            </ul>
+                        </div>
+
+                        <span data-sq-field="componentContent.events[0].link" class="events__button">
+                            Event Link
+
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+				<p>Features (no images)</p>
+            <section class="features" id="features__d5467df5-710d-462d-88ae-fc79c6b27133" style="--features-item-width-desktop: calc(33.33% - 0.834rem);">
+                <ul class="features__list">
+
+                            <li class="features__item">
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[0].title" class="features__item__title">Feature 1</h2>
+                                    <div data-sq-field="componentContent.featuresArray[0].description" class="features__item__description">Feature description</div>
+                                    <a data-sq-field="componentContent.featuresArray[0].callToAction" href="https://example.com" draggable="false" class="features__item__call-to-action" target="_self">Feature link text</a>
+                                </div>
+                            </li>
+
+                            <li class="features__item">
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[1].title" class="features__item__title">Feature 2</h2>
+                                    <div data-sq-field="componentContent.featuresArray[1].description" class="features__item__description">Feature description</div>
+                                    <a data-sq-field="componentContent.featuresArray[1].callToAction" href="https://example.com" draggable="false" class="features__item__call-to-action" target="_self">Feature 2 lInk</a>
+                                </div>
+                            </li>
+
+                            <li class="features__item">
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[2].title" class="features__item__title">Feature 3</h2>
+                                    <div data-sq-field="componentContent.featuresArray[2].description" class="features__item__description">FEature description</div>
+                                    <a data-sq-field="componentContent.featuresArray[2].callToAction" href="https://example.com" draggable="false" class="features__item__call-to-action" target="_self">Feature 3 Link</a>
+                                </div>
+                            </li>
+
+                </ul>
+            </section>
+        <p>Features (images)</p>
+            <section class="features" id="features-img__0aea3af6-2620-408d-a40b-6ed0901d5f9a" style="--features-item-width-desktop: calc(33.33% - 0.834rem);">
+                <ul class="features__list">
+
+                            <li class="features__item">
+                                <div data-sq-field="componentContent.featuresArray[0].icon" class="features__icon__wrapper">
+                                    <img class="features__icon" src="https://digitalassets.okstate.edu/asset/256bab07-f21d-4da9-a69d-d0b30a3149e2/thumbnail/webimage-181107_library_veterans_salute_013-tif" alt="Feature w/ image 1" loading="lazy" />
+                                </div>
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[0].title" class="features__item__title">Feature w/ image 1</h2>
+                                    <div data-sq-field="componentContent.featuresArray[0].description" class="features__item__description">Feature description</div>
+                                    <a data-sq-field="componentContent.featuresArray[0].callToAction" href="https://example.com" draggable="false" class="features__item__call-to-action" target="_self">feature link 1</a>
+                                </div>
+                            </li>
+
+                            <li class="features__item">
+                                <div data-sq-field="componentContent.featuresArray[1].icon" class="features__icon__wrapper">
+                                    <img class="features__icon" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="Feature w/ image 2" loading="lazy" />
+                                </div>
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[1].title" class="features__item__title">Feature w/ image 2</h2>
+                                    <div data-sq-field="componentContent.featuresArray[1].description" class="features__item__description">feature description</div>
+                                    <a data-sq-field="componentContent.featuresArray[1].callToAction" href="https://example.com" draggable="false" class="features__item__call-to-action" target="_self">Feature link 2</a>
+                                </div>
+                            </li>
+
+                            <li class="features__item">
+                                <div data-sq-field="componentContent.featuresArray[2].icon" class="features__icon__wrapper">
+                                    <img class="features__icon" src="https://digitalassets.okstate.edu/asset/e67d6a84-ca9d-4735-a7ae-a4ac21a1fccf/thumbnail/webimage-120722_student_union_north_001-tif" alt="Feature 3 with image" loading="lazy" />
+                                </div>
+                                <div class="features__item__content">
+                                    <h2 data-sq-field="componentContent.featuresArray[2].title" class="features__item__title">Feature 3 with image</h2>
+                                    <div data-sq-field="componentContent.featuresArray[2].description" class="features__item__description">I am feature 3's description</div>
+                                    <a data-sq-field="componentContent.featuresArray[2].callToAction" href="https://union.okstate.edu" draggable="false" class="features__item__call-to-action" target="_self">Student Union</a>
+                                </div>
+                            </li>
+
+                </ul>
+            </section>
+        <p>Gallery</p>
+        <section class="image-gallery" id="gallery__0fc5097d-4b3b-4ef7-8229-a5c8ebeff0d8" data-component="image-gallery">
+            <ul class="image-gallery__wrapper">
+
+
+                <li class="image-gallery__item">
+                    <button data-sq-field="componentContent.images[0].image" title="Open image gallery" aria-label="Open image gallery" class="image-gallery__item-button" data-click="openGalleryDialog">
+                        <img class="image-gallery__item-img" src="https://digitalassets.okstate.edu/asset/9135cc32-afeb-4612-b3d6-f9c35ee208f6/thumbnail/webimage-20260715_Griffith_Students_3" alt="Student playing pool table at the Griffith Community Center." loading="lazy" />
+                    </button>
+                </li>
+
+
+
+                <li class="image-gallery__item">
+                    <button data-sq-field="componentContent.images[1].image" title="Open image gallery" aria-label="Open image gallery" class="image-gallery__item-button" data-click="openGalleryDialog">
+                        <img class="image-gallery__item-img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="" loading="lazy" />
+                    </button>
+                </li>
+
+
+
+                <li class="image-gallery__item">
+                    <button data-sq-field="componentContent.images[2].image" title="Open image gallery" aria-label="Open image gallery" class="image-gallery__item-button" data-click="openGalleryDialog">
+                        <img class="image-gallery__item-img" src="https://digitalassets.okstate.edu/asset/256bab07-f21d-4da9-a69d-d0b30a3149e2/thumbnail/webimage-181107_library_veterans_salute_013-tif" alt="" loading="lazy" />
+                    </button>
+                </li>
+
+
+            </ul>
+            <dialog class="image-gallery__dialog" tabindex="-1" role="dialog" data-modal="modalDialog" aria-labelledby="dialog-title-gallery__0fc5097d-4b3b-4ef7-8229-a5c8ebeff0d8">
+                <div class="image-gallery__dialog-wrapper">
+                    <header class="image-gallery__dialog-header">
+                        <h1 id="dialog-title-gallery__0fc5097d-4b3b-4ef7-8229-a5c8ebeff0d8" class="image-gallery__dialog-title">Image gallery in full screen mode</h1>
+                        <button class="image-gallery__dialog-icon" data-dismiss="modal" aria-label="Close gallery dialog"></button>
+                    </header>
+                    <section class="image-gallery__slider swiper">
+                        <div class="swiper-wrapper" data-loop="true">
+
+
+                            <div class="swiper-slide" lazy="true">
+                                <figure class="image-gallery__slider-item">
+                                    <img data-sq-field="componentContent.images[0].image" class="image-gallery__slider-img" src="https://digitalassets.okstate.edu/asset/9135cc32-afeb-4612-b3d6-f9c35ee208f6/thumbnail/webimage-20260715_Griffith_Students_3" alt="Student playing pool table at the Griffith Community Center." loading="lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+
+                                    <figcaption data-sq-field="componentContent.images[0].description" class="image-gallery__slider-caption">
+                                        <p>Image1 Description<br /></p>
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+
+
+                            <div class="swiper-slide" lazy="true">
+                                <figure class="image-gallery__slider-item">
+                                    <img data-sq-field="componentContent.images[1].image" class="image-gallery__slider-img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="" loading="lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+
+                                    <figcaption data-sq-field="componentContent.images[1].description" class="image-gallery__slider-caption">
+                                        <p>Image 2 description<br /></p>
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+
+
+                            <div class="swiper-slide" lazy="true">
+                                <figure class="image-gallery__slider-item">
+                                    <img data-sq-field="componentContent.images[2].image" class="image-gallery__slider-img" src="https://digitalassets.okstate.edu/asset/256bab07-f21d-4da9-a69d-d0b30a3149e2/thumbnail/webimage-181107_library_veterans_salute_013-tif" alt="" loading="lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+
+                                    <figcaption data-sq-field="componentContent.images[2].description" class="image-gallery__slider-caption">
+                                        <p>image 3 description<br /></p>
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </section>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </dialog>
+        </section>
+				<p>Full image with caption</p>
+        <section class="image image--full" id="image__edc786f5-0309-4b38-ba95-a467183c06cb">
+            <figure class="image__wrapper">
+                <img data-sq-field="componentContent.image" class="image__img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="alt text" loading="lazy" />
+                <figcaption data-sq-field="componentContent.caption" class="image__img-caption">
+                    <p>This is my image caption<br /></p>
+                </figcaption>
+            </figure>
+        </section>
+				<p>Image with caption and sidebar copy</p>
+        <section class="image" id="image-txt__cb81c784-d213-4c35-a68e-2b7a7ed52e54">
+            <div class="image__wrapper image__wrapper--left-side">
+                <div class="image__img-wrapper">
+                    <img data-sq-field="componentContent.image" class="image__img" src="https://digitalassets.okstate.edu/asset/256bab07-f21d-4da9-a69d-d0b30a3149e2/thumbnail/webimage-181107_library_veterans_salute_013-tif" alt="Alt text" loading="lazy" />
+
+                    <div data-sq-field="componentContent.caption" class="image__img-caption"><p>My image Caption<br /></p></div>
+
+                </div>
+                <div data-sq-field="componentContent.description" class="image__img-description">
+                    <p>Rich text content area<br /></p><h3>I can add headings<br /></h3><div><br /></div><p>And stuff<br /></p>
+                </div>
+            </div>
+        </section>
+				<p>Alert</p>
+        <section class="alert-in-page alert-in-page--info" id="alert__aa7b4abd-aa71-42af-8738-29aabedb5e59" role="note">
+            <div class="alert-in-page__wrapper">
+                <div data-sq-field="componentContent.content" class="alert-in-page__text-content">
+                    <p>In page alert content area. <a href="https://example.com">Supports links</a><br /></p>
+                </div>
+                <a data-sq-field="componentContent.link" href="https://example.com" draggable="false" class="alert-in-page__button" target="_self">Alert Link</a>
+            </div>
+        </section>
+				<p>Inset Blockquote</p>
+        <section class="inset_text" id="djafsdflj">
+            <div data-sq-field="componentContent.content" class="inset_text__body">
+                <p> This component is called inset text. It has a rich text box and that's it. Looks kind of like a blockquote.<br /></p>
+            </div>
+        </section>
+        <p>Link List</p>
+        <section class="links" id="links__2cd778b8-6f72-4436-b12b-57eb6cc8b524">
+            <ul class="links__wrapper">
+
+                <li class="links__item">
+                    <a data-sq-field="componentContent.linkList[0]" href="https://example.com" class="links__button" target="_self">
+                        Link List Link 1
+                    </a>
+                </li>
+                <li class="links__item">
+                    <a data-sq-field="componentContent.linkList[1]" href="https://google.com" class="links__button" target="_self">
+                        Link List Link 2
+                    </a>
+                </li>
+                <li class="links__item">
+                    <a data-sq-field="componentContent.linkList[2]" href="https://google.com" class="links__button" target="_self">
+                        Link List Link 3
+                    </a>
+                </li>
+                <li class="links__item">
+                    <a data-sq-field="componentContent.linkList[3]" href="https://google.com" class="links__button" target="_self">
+                        Link List Link 4
+                    </a>
+                </li>
+            </ul>
+        </section>
+				<p>News (not Dynamic)</p>
+        <section class="news" id="news__242b25e2-aaa0-402f-8f24-4cd78788198a" style="--news-item-per-row: 3">
+            <ul class="news__wrapper">
+
+                <li class="news__item">
+                    <div data-sq-field="componentContent.news[0].image" class="news__img-wrapper"><img class="news__img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="" loading="lazy" /></div>
+                    <div class="news__content-wrapper">
+                        <div class="news__body-wrapper">
+                            <h2 data-sq-field="componentContent.news[0].title" class="news__heading"><a href="https://example.com" class="news__heading-link" target="_self">News Item 1</a></h2>
+                            <div class="news__date-wrapper">
+                                <div class="news__date">
+                                    <span data-sq-field="componentContent.news[0].date" class="news__date-label">July 20th</span>
+                                </div>
+                            </div>
+                            <div data-sq-field="componentContent.news[0].description" class="news__body">Here is my news item description.</div>
+
+                            <ul aria-label="News categories" class="news__categories">
+                                <li data-sq-field="componentContent.news[0].categories[0]" class="news__categories-item">category 1</li><li data-sq-field="componentContent.news[0].categories[1]" class="news__categories-item">category 2</li>
+                            </ul>
+                        </div>
+
+                        <span data-sq-field="componentContent.news[0].link" class="news__button">
+                            News Link 1
+
+                        </span>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <div data-sq-field="componentContent.news[1].image" class="news__img-wrapper"><img class="news__img" src="https://digitalassets.okstate.edu/asset/e67d6a84-ca9d-4735-a7ae-a4ac21a1fccf/thumbnail/webimage-120722_student_union_north_001-tif" alt="" loading="lazy" /></div>
+                    <div class="news__content-wrapper">
+                        <div class="news__body-wrapper">
+                            <h2 data-sq-field="componentContent.news[1].title" class="news__heading"><a href="https://example.com" class="news__heading-link" target="_self">News Item 2</a></h2>
+                            <div class="news__date-wrapper">
+                                <div class="news__date">
+                                    <span data-sq-field="componentContent.news[1].date" class="news__date-label">July 30th</span>
+                                </div>
+                            </div>
+                            <div data-sq-field="componentContent.news[1].description" class="news__body">News item 2 description.</div>
+
+                            <ul aria-label="News categories" class="news__categories">
+
+                            </ul>
+                        </div>
+
+                        <span data-sq-field="componentContent.news[1].link" class="news__button">
+                            News Link 2
+
+                        </span>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <div data-sq-field="componentContent.news[2].image" class="news__img-wrapper"><img class="news__img" src="https://digitalassets.okstate.edu/asset/256bab07-f21d-4da9-a69d-d0b30a3149e2/thumbnail/webimage-181107_library_veterans_salute_013-tif" alt="" loading="lazy" /></div>
+                    <div class="news__content-wrapper">
+                        <div class="news__body-wrapper">
+                            <h2 data-sq-field="componentContent.news[2].title" class="news__heading"><a href="https://example.com" class="news__heading-link" target="_self">News Item 3</a></h2>
+                            <div class="news__date-wrapper">
+                                <div class="news__date">
+                                    <span data-sq-field="componentContent.news[2].date" class="news__date-label">Aug 20th</span>
+                                </div>
+                            </div>
+                            <div data-sq-field="componentContent.news[2].description" class="news__body">News Item 3 description</div>
+
+                            <ul aria-label="News categories" class="news__categories">
+                                <li data-sq-field="componentContent.news[2].categories[0]" class="news__categories-item">New!</li>
+                            </ul>
+                        </div>
+
+                        <span data-sq-field="componentContent.news[2].link" class="news__button">
+                            News Link 3
+
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+				<p>Phase Banner</p>
+        <section class="phase-banner" id="phase__c172d833-232a-429b-bd88-6737585e2433">
+            <div class="phase-banner__wrapper">
+                <span data-sq-field="componentContent.status" class="phase-banner__status">Release</span>
+                <div data-sq-field="componentContent.content" class="phase-banner_text-content">
+                <p>Phase banner content - This phase of the project is done and code has been released. <a href="https://example.com">See more</a><br /></p>
+                </div>
+            </div>
+        </section>
+				<p>Pull Quote with Img</p>
+            <section class="pull_quote" id="quote__390ad72e-b2e7-41bb-826d-4f072903c666">
+                <div data-sq-field="componentContent.image" class="pull_quote__image-wrapper">
+                    <img src="https://digitalassets.okstate.edu/asset/debce805-d4c9-41ad-8ffc-3a886807e710/thumbnail/webimage-240528_employee_appreciation_day_048" alt="" loading="lazy" class="pull_quote__image" />
+                </div>
+                <div class="pull_quote__content-wrapper">
+                    <div class="pull_quote__content-quotes">
+                        <blockquote data-sq-field="componentContent.content" class="pull_quote__content"><p>I'm Andrew, and this is my favorite CMS on the citadel.</p></blockquote>
+                    </div>
+                    <div data-sq-field="componentContent.author" class="pull_quote__author">Andrew</div>
+                </div>
+            </section>
+				<p>Tabs</p>
+
+        <section class="tabs tabs--left" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a" data-component="tabs">
+            <div role="tablist" class="tabs__list">
+                <ul class="tabs__nav" data-overflow="true">
+
+                    <li class="tabs__navItem tabs__navItem--active" data-element="tab">
+                        <button class="tabs__button" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-1-tab" role="tab" aria-selected="true" aria-controls="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-1-panel" data-element="tabButton" title="Tab 1">
+                            Tab 1
+                        </button>
+                    </li>
+                    <li class="tabs__navItem" data-element="tab">
+                        <button class="tabs__button" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-2-tab" role="tab" aria-selected="false" aria-controls="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-2-panel" data-element="tabButton" title="Tab 2">
+                            Tab 2
+                        </button>
+                    </li>
+                    <li class="tabs__navItem" data-element="tab">
+                        <button class="tabs__button" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-3-tab" role="tab" aria-selected="false" aria-controls="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-3-panel" data-element="tabButton" title="Tab 3">
+                            Tab 3
+                        </button>
+                    </li>
+
+                    <li class="overflowButton overflowButton--hidden" data-element="overflowContainer">
+                        <button aria-label="Show tab overflow menu" aria-haspopup="true" aria-expanded="false" aria-controls="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs" class="overflowButton__button" data-element="overflowButton"></button>
+                        <ul id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs" role="menu" class="overflowButton__menu" data-element="overflowList"></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs__content tabs__content--active" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-1-panel" aria-labelledby="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-1-tab" role="tabpanel"><div data-sq-field="componentContent.items[0].content"><p>Rich text for some great tabbed content.<br /></p></div></div><div class="tabs__content" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-2-panel" aria-labelledby="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-2-tab" role="tabpanel"><div data-sq-field="componentContent.items[1].content"><p>More rich text<br /></p></div></div><div class="tabs__content" id="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-3-panel" aria-labelledby="tabs__63993e5d-4bac-41ae-8559-aa359ffe600a-tabs-3-tab" role="tabpanel"><div data-sq-field="componentContent.items[2].content"><p>3 tabs? Let's go wild!<br /></p></div></div>
+        </section>
+        <p>Video Banner</p>
+				<section class="video-modal" id="video-modal__77c06075-cf94-43c3-85ba-22af1e17e023" data-component="video-modal">
+            <div class="video-modal__wrapper video-modal__wrapper--left-side">
+                <div class="video-modal__img-wrapper">
+                    <img data-sq-field="componentContent.teaserImg" class="video-modal__img" src="https://digitalassets.okstate.edu/asset/8b73bd5b-0aef-4997-887e-89834c1b9933/thumbnail/webimage-Pistol-Pete-at-Fall-Conference-2021" alt="Pistol Pete meets with Fall Conference attendees in the exhibit hall on Nov. 6." loading="lazy" />
+                    <button class="video-modal__img-button" type="button" data-click="toggleModal" aria-label="Play Video in a dialog"></button>
+                </div>
+                <div class="video-modal__content-wrapper">
+                    <div data-sq-field="componentContent.content" class="video-modal__content">
+                        <p>Here is the teaser content area. It's rich text.<br /></p>
+                    </div>
+
+                    <div class="video-modal__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://example.com" draggable="false" class="video-modal__button" target="_self">Teaser link 1</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://example.com" draggable="false" class="video-modal__button video-modal__button--secondary" target="_self">Teaser link 2</a>
+                    </div>
+                </div>
+            </div>
+            <dialog class="video-modal__dialog" tabindex="-1" role="dialog" data-modal="modalDialog" aria-labelledby="dialog-title-video-modal__77c06075-cf94-43c3-85ba-22af1e17e023">
+                <div class="video-modal__dialog-wrapper">
+                    <header class="video-modal__dialog-header">
+                        <h1 id="dialog-title-video-modal__77c06075-cf94-43c3-85ba-22af1e17e023" class="video-modal__dialog-title">Video in full screen mode</h1>
+                        <button class="video-modal__dialog-icon" type="button" data-dismiss="modal" aria-label="Close video dialog"><span aria-hidden="true">×</span></button>
+                    </header>
+                    <div class="video-modal__player-wrapper">
+                        <iframe class="video-modal__player" src="https://www.youtube.com/embed/3eLx9GRoGV4?rel=0" title="YouTube" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen width="100%" height="100%" data-frame="player"></iframe>
+
+                    </div>
+                </div>
+            </dialog>
+        </section>
+				<p>Video Banner Alt</p>
+        <section class="video-modal video-modal--secondary" id="video-modal-sec__d6ac9ca2-5761-4580-a273-9d9722293125" data-component="video-modal">
+            <div class="video-modal__wrapper video-modal__wrapper--right-side">
+                <div class="video-modal__img-wrapper">
+                    <img data-sq-field="componentContent.teaserImg" class="video-modal__img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="" loading="lazy" />
+                    <button class="video-modal__img-button" type="button" data-click="toggleModal" aria-label="Play video in a dialog"></button>
+                </div>
+                <div class="video-modal__content-wrapper">
+                    <div data-sq-field="componentContent.content" class="video-modal__content">
+                        <p>Description area. Rich text.<br /></p>
+                    </div>
+
+                    <div class="video-modal__button-wrapper">
+                        <a data-sq-field="componentContent.callsToAction[0]" href="https://example.com" draggable="false" class="video-modal__button" target="_self">Optional teaser link 1</a>
+                        <a data-sq-field="componentContent.callsToAction[1]" href="https://example.com" draggable="false" class="video-modal__button video-modal__button--secondary" target="_self">Optional teaser link 2</a>
+                    </div>
+                </div>
+            </div>
+            <dialog class="video-modal__dialog" tabindex="-1" role="dialog" data-modal="modalDialog" aria-labelledby="dialog-title-video-modal-sec__d6ac9ca2-5761-4580-a273-9d9722293125">
+                <div class="video-modal__dialog-wrapper">
+                    <header class="video-modal__dialog-header">
+                        <h1 id="dialog-title-video-modal-sec__d6ac9ca2-5761-4580-a273-9d9722293125" class="video-modal__dialog-title">Video in full screen mode</h1>
+                        <button class="video-modal__dialog-icon" type="button" data-dismiss="modal" aria-label="Close video dialog"><span aria-hidden="true">×</span></button>
+                    </header>
+                    <div class="video-modal__player-wrapper">
+                        <iframe class="video-modal__player" src="https://www.youtube.com/embed/3eLx9GRoGV4?rel=0" title="YouTube" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen width="100%" height="100%" data-frame="player"></iframe>
+
+                    </div>
+                </div>
+            </dialog>
+        </section>
+				<p>Video Full width</p>
+
+        <section class="video-player" id="video-player__22eb03f5-a52e-40c2-8634-5a14c48903f9">
+
+            <div class="video-player__img-wrapper">
+                <img data-sq-field="componentContent.teaserImg" class="video-player__img" src="https://digitalassets.okstate.edu/asset/d2983568-2309-47f9-b632-3ecb1907679f/thumbnail/webimage-140818_first_day_students_013-tif" alt="" loading="lazy" />
+                <button class="video-player__img-button" type="button" data-click="togglePlayer" aria-label="Play Video"></button>
+            </div>
+            <div class="video-player__player-wrapper" style="display:none;">
+                <iframe class="video-modal__player" src="https://www.youtube.com/embed/3eLx9GRoGV4?rel=0" title="YouTube" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen width="100%" height="100%" data-frame="player"></iframe>
+            </div>
+
+        </section>
+				<p>Text field</p>
+				<h1>Header 1</h1>
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>
+				<h5>Header 5</h5>
+				<h6>Header 6</h6>
+				<p>And of course. You can always use a WYSIWYG block.</p><p>Although I think it would be nice if maybe you could drop a background behind it. Need to look into that.</p></div>
         </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-keyboard" aria-expanded="true" aria-controls="accordion-keyboard-panel" type="button">Can I use the keyboard?</button></h3>
-        <div class="accordion__body" id="accordion-keyboard-panel" role="region" aria-labelledby="accordion-keyboard">
-          <p>Yes. Use Tab to reach a heading, then press Enter or Space to open or close its answer. Tab also reaches any links within an open section.</p>
-          <p><a href="index.html?page=accessibility">Read our accessibility information</a></p>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__heading"><button class="accordion__heading-button" id="accordion-multiple" aria-expanded="true" aria-controls="accordion-multiple-panel" type="button">Can more than one answer stay open?</button></h3>
-        <div class="accordion__body" id="accordion-multiple-panel" role="region" aria-labelledby="accordion-multiple">
-          <p>Yes. Open several sections to compare their contents, and close each one when you are finished.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="dialog regents-bg-gray" aria-labelledby="dialog-example-title">
-  <div class="component-inner">
-    <p class="component-eyebrow">02 / Open a focused window</p>
-    <h2 id="dialog-example-title">Dialog</h2>
-    <p>A dialog appears over the page when a short message needs your attention.</p>
-    <button class="dialog__button" type="button" data-modal-open="example-dialog" aria-controls="example-dialog" aria-haspopup="dialog" aria-expanded="false">Open dialog</button>
-    <dialog class="dialog__modal" id="example-dialog" data-component-modal aria-labelledby="dialog-title" aria-describedby="dialog-description">
-      <button class="component-close" type="button" data-modal-close aria-label="Close dialog" autofocus><span aria-hidden="true">×</span></button>
-      <p class="component-eyebrow">Dialog example</p>
-      <h2 id="dialog-title">A moment of focus</h2>
-      <p id="dialog-description">This window keeps a short message in focus while the page waits in the background.</p>
-      <p>Close it with either button, press Escape, or select the shaded background. You will return to the button that opened it.</p>
-      <button class="dialog__button" type="button" data-modal-close>Back to examples</button>
-    </dialog>
-  </div>
-</section>
-<section class="drawer" aria-labelledby="drawer-example-title">
-  <div class="component-inner">
-    <p class="component-eyebrow">03 / Slide up for more</p>
-    <h2 id="drawer-example-title">Drawer</h2>
-    <p>A drawer slides up from the bottom to hold related information or useful links.</p>
-    <button class="drawer__trigger-button" type="button" data-modal-open="example-drawer" aria-controls="example-drawer" aria-haspopup="dialog" aria-expanded="false">Open drawer</button>
-    <dialog class="drawer-modal" id="example-drawer" data-component-modal aria-labelledby="drawer-title" aria-describedby="drawer-description">
-      <button class="component-close" type="button" data-modal-close aria-label="Close drawer" autofocus><span aria-hidden="true">×</span></button>
-      <p class="component-eyebrow">Drawer example</p>
-      <h2 id="drawer-title">More to explore</h2>
-      <p id="drawer-description">Keep supporting information close at hand in a panel that opens from the bottom of the page.</p>
-      <h3>Explore the Regents site</h3>
-      <ul class="component-drawer-links">
-        <li><a href="members-static.html">Meet the Regents</a></li>
-        <li><a href="index.html?page=meetings">View the meeting reference</a></li>
-        <li><a href="index.html?page=contact">Contact the Board</a></li>
-      </ul>
-      <p>Press Escape or use a close button to return to the examples.</p>
-      <button class="dialog__button" type="button" data-modal-close>Close panel</button>
-    </dialog>
-  </div>
-</section>
 <section class="footer-lockup footer-lockup--2" aria-labelledby="institutions-title"><div class="footer-lockup__inner"><h2 id="institutions-title" class="footer-lockup__heading">Oklahoma A&amp;M Institutions</h2><div class="footer-lockup__logos"><a href="https://connorsstate.edu/" aria-label="Connors State College"><img src="assets/logos/connors-state-color.svg" alt="Connors State College" loading="lazy"></a><a href="https://langston.edu/" aria-label="Langston University"><img src="assets/logos/langston-color.png" alt="Langston University" loading="lazy"></a><a href="https://neo.edu/" aria-label="NEO A&M College"><img src="assets/logos/neo-color.svg" alt="NEO A&M College" loading="lazy"></a><a href="https://opsu.edu/" aria-label="Oklahoma Panhandle State University"><img src="assets/logos/opsu-color.svg" alt="Oklahoma Panhandle State University" loading="lazy"></a><a href="https://okstate.edu/" aria-label="Oklahoma State University"><img src="assets/logos/osu-color.svg" alt="Oklahoma State University" loading="lazy"></a></div></div></section></main><footer id="footer"><div class="footer dashboard-footer"><div class="regents-container"><div class="row"><div class="col-md-4"><h2>OSU/ A&amp;M REGENTS</h2><address>900 N. PORTLAND AVENUE<br>OKLAHOMA CITY, OK 73107<br>PH: <a href="tel:+14059453263">405-945-3263</a><br>FAX: 405-945-3345<br>EMAIL: <a href="mailto:board@okstate.edu">BOARD@OKSTATE.EDU</a></address></div><div class="col-md-4"><h2>INSTITUTIONS</h2><ul class="footer-links"><li><a href="https://okstate.edu/">OSU - Stillwater</a></li><li><a href="https://osuokc.edu/">OSU - Oklahoma City</a></li><li><a href="https://tulsa.okstate.edu/">OSU - Tulsa</a></li><li><a href="https://medicine.okstate.edu/">OSU Center for Health Sciences</a></li><li><a href="https://osuit.edu/">OSU Institute of Technology</a></li></ul></div><div class="col-md-4"><h2 class="visually-hidden">More institutions</h2><ul class="footer-links pt-md-4"><li><a href="https://connorsstate.edu/">Connors State College</a></li><li><a href="https://langston.edu/">Langston University</a></li><li><a href="https://neo.edu/">NEO A&M College</a></li><li><a href="https://opsu.edu/">Oklahoma Panhandle State University</a></li></ul></div></div><div class="footer-bottom">© 2026 &nbsp; | &nbsp; ALL RIGHTS RESERVED<br>BOARD OF REGENTS FOR THE OKLAHOMA AGRICULTURAL AND MECHANICAL COLLEGES<br><a href="index.html?page=ethics">ETHICS POINT</a><span class="footer-divider" aria-hidden="true"> · </span><a href="index.html?page=accessibility">ACCESSIBILITY &amp; HELP</a></div></div></div></footer></body>
 </html>
