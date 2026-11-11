@@ -195,3 +195,6 @@ h6 { font-family: 'Oswald', sans-serif; font-size: 1.25rem; font-weight: 400; }
    Add class="regents-bg-gray" alongside its existing component classes. */
 #main-content .regents-bg-gray { background-color: #DDDDDD; }
 #main-content .regents-bg-white { background-color: #FFFFFF; }
+
+/* Paragraph typography, including component paragraphs with their own size rules. */
+p, #main-content p, #main-content p[class] { font-size: 1.125rem; }
