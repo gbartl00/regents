@@ -198,3 +198,4 @@ h6 { font-family: 'Oswald', sans-serif; font-size: 1.25rem; font-weight: 400; }
 
 /* Paragraph typography, including component paragraphs with their own size rules. */
 p, #main-content p, #main-content p[class] { font-size: 1.125rem; }
+#main-content :is(.banner__button,.news__button) { font-size: 1rem; }
