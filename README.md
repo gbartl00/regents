@@ -140,3 +140,7 @@ Preview alternatives in the full homepage using `index.html?footer=1`,
 `index.html?footer=2`, or `index.html?footer=3` (optionally add `#institutions-title`).
 The comparison page links to these previews. Preview overrides are URL-specific; missing or invalid options use option 2. The main page generator shares the same
 lockup renderer with the comparison page so the previews stay consistent.
+
+## Mobile header and navigation
+
+Below 992px, the header follows the supplied mobile-menu reference: text branding with a top-right hamburger/close control, an expanding in-page menu over the gray seal, indented inline submenus, and search below the links. Desktop navigation keeps its existing layout. The brand title links home on both layouts. Desktop and mobile search forms have distinct input IDs; generated static pages submit both forms to the interactive search route. Escape closes a submenu first, then the main menu and returns focus to its toggle.

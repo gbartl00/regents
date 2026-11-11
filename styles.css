@@ -34,9 +34,11 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 .brand { display: flex; flex: 1 1 32rem; min-width: 0; align-items: center; gap: 28px; color: var(--regents-ink); }
 .brand-logo { display: inline-flex; flex: 0 0 auto; line-height: 0; }
 .brand img { width: 110px; height: 110px; }
-.brand-title { font-size: 1.125rem; line-height: 1.35; font-weight: 600; }
+.brand-title { font-size: 1.125rem; line-height: 1.35; font-weight: 600; color: inherit; text-decoration: none; }
+.brand-title:hover { color: inherit; }
 .brand-title strong { font-size: 1.5rem; font-weight: 700; }
 .site-search { margin-left: auto; display: flex; flex: 0 1 19rem; min-width: 0; }
+.mobile-search { display: none; }
 .site-search input { min-width: 0; min-height: 46px; border: 2px solid #626262; border-radius: 0; font-size: 1rem; color: #000; background: #fff; }
 .site-search input::placeholder { color: #626262; opacity: 1; }
 .search-button { flex: 0 0 48px; min-height: 46px; background: var(--regents-light); color: #333; border: 2px solid #626262; border-left: 0; }
@@ -109,12 +111,34 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 @media (min-width:992px) and (max-width:1199.98px) { .navbar { margin-left: 0; } }
 @media (max-width:1100px) { .brand img { width: 100px; height: 100px; } .brand-title { font-size: 1rem; } .brand-title strong { font-size: 1.375rem; } .navbar .nav-link { font-size: 1rem; } }
 @media (max-width:991.98px) {
-  .brand { flex-basis: 100%; } .site-search { margin-left: 0; flex: 1 1 19rem; max-width: 28rem; }
-  .navbar { margin-left: 0; padding-block: 16px; } .navbar-collapse { flex-basis: 100%; width: 100%; }
-  .navbar-nav { gap: 0; } .navbar .nav-link { padding: 12px 0 !important; } .navbar .nav-item { min-width: 0; }
-  .navbar .dropdown-toggle { width: 100%; justify-content: space-between; }
-  .navbar .dropdown-menu { position: static !important; transform: none !important; float: none; width: 100%; min-width: 0; max-width: 100%; margin: 0 0 12px; box-shadow: none; background: #eee; }
-  .navbar .dropdown-item { padding: 12px; }
+  .masthead { padding-top: 0; }
+  .masthead::before { background-position: center top; background-size: calc(100% - 24px) auto; }
+  .masthead > .regents-container { position: relative; }
+  .brand-row { min-height: 100px; padding-block: 20px; padding-right: 60px; }
+  .brand { flex-basis: 100%; }
+  .brand-logo, .desktop-search { display: none; }
+  .brand-title { font-size: 1rem; }
+  .brand-title strong { font-size: 1.25rem; }
+  .navbar { position: static; margin-left: 0; padding: 0; }
+  .navbar-toggler { position: absolute; right: 24px; top: 24px; width: 44px; height: 44px; border: 0; padding: 6px; color: var(--regents-navy); }
+  .menu-icon { position: relative; display: block; width: 32px; height: 26px; }
+  .menu-icon span { position: absolute; left: 0; width: 32px; height: 4px; background: currentColor; transition: transform .15s, opacity .15s; }
+  .menu-icon span:nth-child(1) { top: 0; }
+  .menu-icon span:nth-child(2) { top: 11px; }
+  .menu-icon span:nth-child(3) { top: 22px; }
+  .navbar-toggler[aria-expanded="true"] { color: var(--regents-blue); }
+  .navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(1) { transform: translateY(11px) rotate(45deg); }
+  .navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(2) { opacity: 0; }
+  .navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(3) { transform: translateY(-11px) rotate(-45deg); }
+  .navbar-collapse { flex-basis: 100%; width: 100%; }
+  .navbar-nav { gap: 0; padding-top: 8px; }
+  .navbar .nav-link { padding: 14px 0 !important; font-size: 1.125rem; min-height: 52px; }
+  .navbar .nav-item { min-width: 0; }
+  .navbar .dropdown-toggle { width: auto; justify-content: flex-start; gap: 20px; }
+  .navbar .dropdown-menu { position: static !important; transform: none !important; float: none; width: 100%; min-width: 0; max-width: 100%; margin: 0 0 6px; padding: 0 0 0 24px; border: 0; box-shadow: none; background: transparent; }
+  .navbar .dropdown-item { padding: 10px 0; font-size: 1.125rem; font-weight: 600; text-decoration: none; }
+  .navbar .dropdown-item:hover, .navbar .dropdown-item:focus { background: transparent; text-decoration: underline; }
+  .mobile-search { display: flex; margin: 24px 0 32px; width: 100%; max-width: 34rem; }
 }
 @media (max-width:850px) { #main-content .institution-logos { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (max-width:767px) {

@@ -1,6 +1,11 @@
 // Keep the keyboard path predictable when a mobile menu is dismissed.
 const menuButton=document.querySelector('.navbar-toggler');
 const menuPanel=document.querySelector('#main-nav');
+menuPanel.addEventListener('show.bs.collapse',()=>menuButton.setAttribute('aria-label','Close menu'));
+menuPanel.addEventListener('hide.bs.collapse',()=>{
+ menuButton.setAttribute('aria-label','Main menu');
+ if(menuPanel.contains(document.activeElement)) menuButton.focus();
+});
 document.querySelector('.navbar').addEventListener('keydown',event=>{
  const dropdown=event.target.closest('.dropdown');
  const dropdownButton=dropdown?.querySelector('[data-bs-toggle="dropdown"]');
