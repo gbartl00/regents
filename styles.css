@@ -19,7 +19,17 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 .skip-link:focus { top: 10px; transform: translateY(0); }
 
 /* Shared navigation remains outside the content component container. */
-.masthead { padding-top: 24px; border-bottom: 6px solid var(--regents-navy); }
+.masthead { position: relative; isolation: isolate; background: #fff; padding-top: 24px; border-bottom: 6px solid var(--regents-navy); }
+/* Oversized decorative seal, cropped within the header without clipping dropdowns. */
+.masthead::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('assets/logos/regents-seal-gray.svg') 36% -8px / clamp(30rem,44vw,58rem) auto no-repeat;
+  opacity: .5;
+}
 .brand-row { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 32px; }
 .brand { display: flex; flex: 1 1 32rem; min-width: 0; align-items: center; gap: 28px; color: var(--regents-ink); }
 .brand-logo { display: inline-flex; flex: 0 0 auto; line-height: 0; }
