@@ -153,10 +153,52 @@ Bootstrap navigation separately.
 `footer-options.html` compares three alternatives based on the supplied
 `alt options-bottom logo lockup.pdf`: blue frame, light-gray frame, and individual
 white logo tiles on gray. Each uses the supplied full-color school marks.
-The existing black-logo band remains the default.
+The light-gray framed full-color logo band is the approved default across all pages.
 
 Preview alternatives in the full homepage using `index.html?footer=1`,
 `index.html?footer=2`, or `index.html?footer=3` (optionally add `#institutions-title`).
 The comparison page links to these previews. Options are URL-specific and do not
 save or change the selected default. The main page generator shares the same
 lockup renderer with the comparison page so the previews stay consistent.
+## Meeting pages (November 15, 2026)
+
+The supplied `upcoming-meetings.pdf` is the reference for the row-based schedule
+and two-column details layout. The eight supplied meeting dates run from
+December 4, 2026 through December 3, 2027. Homepage summaries and search share
+this schedule. Each details URL uses its ISO date as its meeting ID. Old numeric
+IDs 0–3 retain their previous meeting data; unknown IDs show the not-found page.
+
+Static references: `upcoming-meetings.html` and `meeting-details.html`.
+The latter reproduces the PDF's separate March 6, 2026 example, including its
+Council Room address. That historical example is not inserted into the upcoming
+schedule, and its room address is not assumed for other meetings.
+
+No agenda, related-agenda, or minutes files/URLs were supplied. Their labels are
+therefore noninteractive and the panel explains availability; visitors can request
+documents by email. Request-information links include the selected meeting date
+in the email subject. Meeting pages use the gray-framed full-color institution
+lockup shown in this PDF, matching the approved default footer used on other pages.
+## Expanded kitchen sink (November 16, 2026)
+
+`components.html` and `index.html?page=components` now include the component families
+and variants in the supplied `regents.html`, with 27 navigable examples: accordion,
+dialog, bottom drawer, five banner treatments, cards, native details, events,
+features with/without images, image/caption and image/text, alert, inset text, links,
+news, phase banner, pull quote, gallery, tabs, two video banners, inline video, and
+typography/rich text. Content and dates in the catalog are examples.
+
+The supplied `regents-components.css` is unchanged. Reference images are stored in
+`assets/components/`. The CMS dashboard scripts are not dependencies; `components.js`
+provides standalone behavior for this site. Example placeholder links point to the
+Board contact page, and existing real university links are retained.
+
+Tabs implement roving keyboard focus with Left/Right, Home, and End. Galleries
+reuse the modal lifecycle, support Previous/Next and Left/Right, announce the image
+caption, and return focus on close. Video frames are initialized on opening or
+playing; closing or stopping removes their source to stop playback. Video samples
+use the YouTube URL supplied by the reference and include a direct watch link.
+Typography specimens use styled text so the page retains one primary heading.
+
+The catalog passes 16 axe/overflow checks covering desktop/mobile default,
+accordion, dialog, drawer, gallery, tabs, modal video, and inline video states.
+Results are retained in `audit/kitchen-sink-results.json`.

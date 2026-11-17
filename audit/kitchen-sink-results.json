@@ -1,0 +1,114 @@
+[
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=accordion",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=dialog",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=drawer",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=gallery",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=tabs",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=video",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=inline-video",
+    "violations": [],
+    "width": 1280
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=accordion",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=dialog",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=drawer",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=gallery",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=tabs",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=video",
+    "violations": [],
+    "width": 320
+  },
+  {
+    "h1": 1,
+    "overflow": false,
+    "url": "http://localhost:3001/components.html?audit=1&component=inline-video",
+    "violations": [],
+    "width": 320
+  }
+]

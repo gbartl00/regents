@@ -19,7 +19,9 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 .skip-link:focus { top: 10px; transform: translateY(0); }
 
 /* Shared navigation remains outside the content component container. */
-.masthead { padding-top: 24px; border-bottom: 6px solid var(--regents-navy); }
+.masthead { position: relative; isolation: isolate; padding-top: 24px; border-bottom: 6px solid var(--regents-navy); }
+/* Decorative seal is clipped by its own background box; menus can still extend beyond the header. */
+.masthead::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: url("assets/logos/regents-seal-gray.svg") no-repeat 42% top; background-size: clamp(24rem,42vw,44rem) auto; opacity: .3; }
 .brand-row { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 32px; }
 .brand { display: flex; flex: 1 1 32rem; min-width: 0; align-items: center; gap: 28px; color: var(--regents-ink); }
 .brand-logo { display: inline-flex; flex: 0 0 auto; line-height: 0; }
@@ -172,3 +174,79 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
   .footer-lockup__logos a { min-height: 110px; }
   .footer-lockup--3 .footer-lockup__logos a { min-height: 120px; padding: .75rem; }
 }
+
+/* Upcoming schedule and meeting details from the November meeting-page reference. */
+.meetings-page, .meeting-details-page { padding-block: 3rem 4rem; }
+.meeting-notice { margin-bottom: 1rem; }
+.meeting-schedule { list-style: none; padding: 0; margin: 0; }
+.meeting-row { display: grid; grid-template-columns: 14rem minmax(0,1fr) minmax(15rem,1fr); align-items: start; gap: 2rem; padding-block: 2.5rem; border-bottom: 1px solid #ddd; }
+.meeting-row:last-child { border-bottom: 0; }
+.meeting-date { display: inline-flex; align-items: center; gap: .75rem; color: var(--regents-navy); flex-shrink: 0; }
+.meeting-date__day { display: grid; place-items: center; min-width: 5.5rem; height: 5.5rem; padding-inline: .5rem; background: var(--regents-navy); color: #fff; font-size: 2.5rem; font-weight: 700; line-height: 1; }
+.meeting-date__month { font-size: 2rem; font-weight: 700; line-height: 1.2; }
+#main-content .meeting-row__summary h2, #main-content .meeting-details-summary h2 { font: 700 1.125rem/1.5 'Open Sans',sans-serif; margin: 0; }
+#main-content .meeting-row__summary p { margin: 0; }
+.meeting-row__actions { display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; }
+.meeting-action { display: inline-flex; align-items: baseline; gap: .4rem; min-height: 32px; font-size: .875rem; font-weight: 700; text-transform: uppercase; text-underline-offset: 3px; }
+.meeting-action::before { content: '›' / ''; font-size: 1.4em; line-height: 1; }
+.meeting-details-grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 4rem; align-items: start; margin-top: 2rem; max-width: 66rem; }
+.meeting-details-summary .meeting-date { margin-bottom: 2.5rem; }
+.meeting-venue { margin-top: 1.75rem !important; }
+.meeting-documents { background: #ddd; padding: 2rem; }
+#main-content .meeting-documents h2 { font-size: 2.25rem; margin-bottom: 1.25rem; }
+.meeting-documents ul { list-style: none; padding: 0; margin: 0; }
+.meeting-documents li { padding-block: .5rem; }
+.meeting-document-label { display: inline-flex; align-items: baseline; gap: .4rem; color: var(--regents-navy); font-size: .875rem; font-weight: 700; text-transform: uppercase; }
+.meeting-document-label::before { content: '›' / ''; font-size: 1.4em; line-height: 1; }
+#main-content .meeting-documents-note { margin: 1rem 0 0; font-size: .875rem; }
+.meeting-details-bottom { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid #ddd; }
+.meeting-back { display: inline-flex; align-items: center; min-height: 32px; font-size: .875rem; }
+.meeting-card .meeting-date { margin-bottom: 1rem; }
+.meeting-card .meeting-date__day { min-width: 3.5rem; height: 3.5rem; font-size: 1.75rem; }
+.meeting-card .meeting-date__month { font-size: 1.125rem; }
+@media(max-width:991.98px) { .meeting-row { grid-template-columns: 11rem minmax(0,1fr); gap: 1rem 2rem; } .meeting-row__actions { grid-column: 2; } .meeting-details-grid { gap: 2rem; } }
+@media(max-width:600px) {
+  .meeting-row { grid-template-columns: 1fr; gap: 1rem; padding-block: 2rem; }
+  .meeting-row__actions { grid-column: auto; }
+  .meeting-action { min-height: 44px; }
+  .meeting-date__day { min-width: 4.5rem; height: 4.5rem; font-size: 2rem; }
+  .meeting-date__month { font-size: 1.625rem; }
+  .meeting-details-grid { grid-template-columns: 1fr; }
+  .meeting-details-summary .meeting-date { margin-bottom: 1.5rem; }
+  .meeting-documents { padding: 1.5rem; }
+  .meeting-details-bottom { margin-top: 2rem; }
+}
+@media(forced-colors:active) { .meeting-date__day, .meeting-documents { border: 1px solid CanvasText; } }
+
+/* Kitchen sink catalog: section labels, interactive gallery, video and type specimens. */
+.kitchen-jump { display:flex; flex-wrap:wrap; gap:.5rem; padding-block:1.5rem 2rem; }
+.kitchen-jump a { display:inline-flex; align-items:center; min-height:44px; padding:.5rem .85rem; border:1px solid #ddd; font-size:.875rem; }
+.kitchen-jump a:hover { background:#eee; }
+.kitchen-example { border-top:1px solid #ddd; }
+.kitchen-example-label { padding-top:2rem; }
+.kitchen-example-label h2 { margin-bottom:0; }
+#main-content .kitchen-news .news__wrapper { margin-top:1rem; }
+#main-content .kitchen-example>.news { padding-top:2rem; }
+#main-content .kitchen-example>.news::before { display:none; }
+[id^="demo-"] { scroll-margin-top:1rem; }
+#main-content .tabs__button { min-height:44px; }
+#main-content .tabs__content { outline-offset:4px; }
+#main-content .kitchen-gallery, #main-content .kitchen-video-dialog { width:min(90vw,850px); max-height:90dvh; overflow-y:auto; overscroll-behavior:contain; padding:2rem; }
+#main-content .kitchen-gallery h2, #main-content .kitchen-video-dialog h2 { padding-right:2rem; }
+.kitchen-gallery figure { margin:1rem 0; }
+.kitchen-gallery-image { display:block; width:100%; max-height:55dvh; object-fit:contain; }
+.kitchen-gallery figcaption { margin-top:.75rem; }
+.kitchen-gallery-controls { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.75rem; }
+#main-content .video-modal__img-button { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+.kitchen-inline-player { aspect-ratio:auto; }
+.kitchen-inline-player iframe { display:block; width:100%; aspect-ratio:16/9; margin-bottom:1rem; }
+.kitchen-inline-player>a { margin-left:1rem; display:inline-flex; min-height:44px; align-items:center; }
+#main-content .video-modal__wrapper, #main-content .video-player__img-wrapper { margin-top:1.5rem; }
+.kitchen-typography { padding-block:3rem; }
+.kitchen-type-h1 { font:700 3rem/1.25 'Oswald',sans-serif; }
+.kitchen-type-h2 { font:700 2.5rem/1.25 'Oswald',sans-serif; }
+.kitchen-type-h3 { font:700 1.5rem/1.25 'Open Sans',sans-serif; }
+.kitchen-type-h4 { font:600 1.25rem/1.25 'Open Sans',sans-serif; }
+.kitchen-type-h5 { font:500 1.25rem/1.25 'Open Sans',sans-serif; }
+.kitchen-type-h6 { font:400 1.25rem/1.25 'Oswald',sans-serif; }
+@media(max-width:600px) { #main-content .kitchen-gallery, #main-content .kitchen-video-dialog { padding:1.5rem; } }

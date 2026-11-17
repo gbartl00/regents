@@ -1,0 +1,228 @@
+{
+  "accessibility": [
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meetings&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2026-12-04&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2027-01-19&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2027-06-11&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/meeting-details.html?audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/upcoming-meetings.html?audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=search&q=2027&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=invalid&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=0&audit=1",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meetings&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2026-12-04&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2027-01-19&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=2027-06-11&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/meeting-details.html?audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/upcoming-meetings.html?audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=search&q=2027&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=invalid&audit=1",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "overflow": false,
+      "url": "http://localhost:3001/?page=meeting&id=0&audit=1",
+      "violations": [],
+      "width": 320
+    }
+  ],
+  "schedule": [
+    {
+      "date": "2026-12-04",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Dec%204%2C%202026",
+      "summary": "Regular Board Meeting\n— Dec 4, 2026\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2026-12-04"
+    },
+    {
+      "date": "2027-01-19",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Jan%2019%2C%202027",
+      "summary": "Regular Board Meeting\n— Jan 19, 2027\n\n10:00 a.m.\nHamm Institute for American Energy at OSU",
+      "url": "?page=meeting&id=2027-01-19"
+    },
+    {
+      "date": "2027-03-05",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Mar%205%2C%202027",
+      "summary": "Regular Board Meeting\n— Mar 5, 2027\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2027-03-05"
+    },
+    {
+      "date": "2027-04-23",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20April%2023%2C%202027",
+      "summary": "Regular Board Meeting\n— April 23, 2027\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2027-04-23"
+    },
+    {
+      "date": "2027-06-11",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20June%2011%2C%202027",
+      "summary": "Regular Board Meeting\n— June 11, 2027\n\n10:00 a.m.\nOSU-Tulsa",
+      "url": "?page=meeting&id=2027-06-11"
+    },
+    {
+      "date": "2027-09-10",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Sept%2010%2C%202027",
+      "summary": "Regular Board Meeting\n— Sept 10, 2027\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2027-09-10"
+    },
+    {
+      "date": "2027-10-22",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Oct%2022%2C%202027",
+      "summary": "Regular Board Meeting\n— Oct 22, 2027\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2027-10-22"
+    },
+    {
+      "date": "2027-12-03",
+      "request": "mailto:board@okstate.edu?subject=Meeting%20information%20%E2%80%94%20Dec%203%2C%202027",
+      "summary": "Regular Board Meeting\n— Dec 3, 2027\n\n10:00 a.m.\nOklahoma State University",
+      "url": "?page=meeting&id=2027-12-03"
+    }
+  ],
+  "details": [
+    {
+      "date": "2026-12-04",
+      "venue": "Oklahoma State University"
+    },
+    {
+      "date": "2027-01-19",
+      "venue": "Hamm Institute for American Energy at OSU"
+    },
+    {
+      "date": "2027-03-05",
+      "venue": "Oklahoma State University"
+    },
+    {
+      "date": "2027-04-23",
+      "venue": "Oklahoma State University"
+    },
+    {
+      "date": "2027-06-11",
+      "venue": "OSU-Tulsa"
+    },
+    {
+      "date": "2027-09-10",
+      "venue": "Oklahoma State University"
+    },
+    {
+      "date": "2027-10-22",
+      "venue": "Oklahoma State University"
+    },
+    {
+      "date": "2027-12-03",
+      "venue": "Oklahoma State University"
+    }
+  ]
+}
