@@ -19,7 +19,7 @@ for (const [filename, search] of routes) {
   .replace('src="app.js"', 'src="site-navigation.js"');
  html = html.replace(/href="\?page=member&amp;id=([a-z-]+)"/g, 'href="member-$1-static.html"')
   .replaceAll('href="?page=members"', 'href="members-static.html"').replaceAll('href="./"', 'href="index-static.html"')
-  .replace(/href="\?page=/g, 'href="index.html?page=').replace('class="site-search" action=""', 'class="site-search" action="index.html"');
+  .replace(/href="\?page=/g, 'href="index.html?page=').replace(/class="(site-search[^"]*)" action=""/g, 'class="$1" action="index.html"');
  fs.writeFileSync(path.join(root,filename), html);
 }
 console.log(`Updated ${routes.length} static reference pages.`);

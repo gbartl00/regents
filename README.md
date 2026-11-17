@@ -123,31 +123,10 @@ markup as the interactive site. `npm run deploy` includes this step automaticall
 behavior. The theme retains its supplied Google Fonts imports; existing local font
 files are also retained as fallback. The previous implementation is backed up under
 `tmp/before-component-theme/`, which is excluded from deployment.
-## Interactive component examples
+## Sample component page
 
-Open `components.html` (or `index.html?page=components`) for working accordion,
-modal dialog, and bottom modal drawer examples using the supplied component
-class names. `components.js` is the reusable behavior layer; `styles.css` adds
-only modal positioning, close controls, and drawer motion to the supplied theme.
+The component catalog combines the supplied examples with local interactive behavior; see the expanded kitchen sink notes below. Approved typography updates from GitHub set H1 to 2.5rem, H2 to 2.25rem, paragraphs to 1.125rem, and banner/news button labels to 1rem.
 
-For an accordion, wrap heading buttons and their panels in `[data-accordion]`.
-Each `.accordion__heading-button` needs `aria-controls` pointing to its panel ID;
-its panel needs `aria-labelledby` pointing to the button ID. The script synchronizes
-`aria-expanded` and `hidden`. Add `data-start-open` to start a panel expanded.
-Answers remain readable if JavaScript is unavailable.
-
-For a dialog or drawer, use a native `<dialog data-component-modal>` with an ID
-and `aria-labelledby` referencing its visible title. An opener uses
-`data-modal-open="dialog-id"`, `aria-controls="dialog-id"`, `aria-haspopup="dialog"`,
-and `aria-expanded="false"`. Close buttons use `data-modal-close`. Keep the modal
-inside `#main-content` so the supplied component styles apply. Load `components.js`
-with `defer` after the markup or after the script that renders it.
-
-The script contains Tab and Shift+Tab focus cycling, Escape and backdrop dismissal,
-background scroll locking, and focus restoration. The drawer slides up from the bottom, uses the viewport width, and scrolls internally on smaller screens. Drawer links are ordinary links.
-Reduced-motion preferences disable the slide-in animation. No additional JavaScript
-library is needed for these three components. The page retains the existing shared
-Bootstrap navigation separately.
 ## Footer options for review
 
 `footer-options.html` compares three alternatives based on the supplied
@@ -187,7 +166,7 @@ features with/without images, image/caption and image/text, alert, inset text, l
 news, phase banner, pull quote, gallery, tabs, two video banners, inline video, and
 typography/rich text. Content and dates in the catalog are examples.
 
-The supplied `regents-components.css` is unchanged. Reference images are stored in
+The supplied component theme includes the approved typography updates. Reference images are stored in
 `assets/components/`. The CMS dashboard scripts are not dependencies; `components.js`
 provides standalone behavior for this site. Example placeholder links point to the
 Board contact page, and existing real university links are retained.
@@ -202,3 +181,7 @@ Typography specimens use styled text so the page retains one primary heading.
 The catalog passes 16 axe/overflow checks covering desktop/mobile default,
 accordion, dialog, drawer, gallery, tabs, modal video, and inline video states.
 Results are retained in `audit/kitchen-sink-results.json`.
+
+## Mobile header and navigation
+
+Below 992px, the header follows the supplied mobile-menu reference: text branding with a top-right hamburger/close control, an expanding in-page menu over the gray seal, indented inline submenus, and search below the links. Desktop navigation keeps its existing layout. The brand title links home on both layouts. Desktop and mobile search forms have distinct input IDs; generated static pages submit both forms to the interactive search route. Escape closes a submenu first, then the main menu and returns focus to its toggle.
