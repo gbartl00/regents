@@ -185,3 +185,12 @@ Results are retained in `audit/kitchen-sink-results.json`.
 ## Mobile header and navigation
 
 Below 992px, the header follows the supplied mobile-menu reference: text branding with a top-right hamburger/close control, an expanding in-page menu over the gray seal, indented inline submenus, and search below the links. Desktop navigation keeps its existing layout. The brand title links home on both layouts. Desktop and mobile search forms have distinct input IDs; generated static pages submit both forms to the interactive search route. Escape closes a submenu first, then the main menu and returns focus to its toggle.
+
+
+## Minutes archive mockup
+
+Open `index.html?page=minutes` or `minutes.html`. A labeled year picker and Show year button switch between 2026 and 2025 using a GET form, preserving the year in the URL. The default is 2026; unsupported years fall back to the newest sample year. The static page submits to the interactive route.
+
+The sample snapshot contains 10 meetings per year, copied from https://regents.okstate.edu/minutes on November 18, 2026. Meeting dates, times, locations, and document URLs are retained; minutes links appear first and PDF links are labeled. Documents with an `info_regarding_` filename are labeled Minutes information. The sample is not a live feed; earlier years link to the full original archive. Data and rendering live in `app.js`; regeneration uses `npm run build:static`.
+
+Verification: year switching and keyboard form submission work on interactive/static pages. Four targeted axe scans (2026 at 1280px and 320px, 2025 at 320px, static 2026 at 1280px) found no automated violations or horizontal overflow. These checks do not establish full accessibility conformance. Results: `audit/minutes-page-results.json`.

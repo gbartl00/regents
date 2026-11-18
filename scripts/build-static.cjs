@@ -6,7 +6,7 @@ const code = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const navigation = code.slice(code.indexOf('// Keep the keyboard path'));
 fs.writeFileSync(path.join(root, 'site-navigation.js'), navigation);
 const ids = [...code.matchAll(/id:'([^']+)',name:/g)].map(m => m[1]);
-const routes = [['index-static.html', ''], ['members-static.html', '?page=members'], ['components.html', '?page=components'], ['footer-options.html', '?page=footer-options'], ['upcoming-meetings.html', '?page=meetings'], ['meeting-details.html', '?page=meeting&id=2026-03-06'], ...ids.map(id => [`member-${id}-static.html`, `?page=member&id=${id}`]), ['member-static.html', '?page=member&id=cary-baetz']];
+const routes = [['index-static.html', ''], ['members-static.html', '?page=members'], ['components.html', '?page=components'], ['footer-options.html', '?page=footer-options'], ['upcoming-meetings.html', '?page=meetings'], ['minutes.html', '?page=minutes'], ['meeting-details.html', '?page=meeting&id=2026-03-06'], ...ids.map(id => [`member-${id}-static.html`, `?page=member&id=${id}`]), ['member-static.html', '?page=member&id=cary-baetz']];
 const template = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 for (const [filename, search] of routes) {
  const nodes = new Map();

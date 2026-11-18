@@ -9,7 +9,7 @@ const server = http.createServer((req,res) => {
   try { pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname); } catch {res.writeHead(400);res.end('Bad request');return;}
   const file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
   if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end('Forbidden');return;}
-  if(!['/index.html','/styles.css','/regents-components.css','/site-navigation.js','/components.js','/components.html','/footer-options.html','/upcoming-meetings.html','/meeting-details.html','/app.js',...staticPages].includes(pathname==='/'?'/index.html':pathname)&&!pathname.startsWith('/assets/')){res.writeHead(404);res.end('Not found');return;}
+  if(!['/index.html','/styles.css','/regents-components.css','/site-navigation.js','/components.js','/components.html','/footer-options.html','/minutes.html','/upcoming-meetings.html','/meeting-details.html','/app.js',...staticPages].includes(pathname==='/'?'/index.html':pathname)&&!pathname.startsWith('/assets/')){res.writeHead(404);res.end('Not found');return;}
   fs.readFile(file,(err,data)=>{if(err){res.writeHead(404);res.end('Not found');return;}res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache'});res.end(data);});
 });
 server.listen(3000,'127.0.0.1',()=>console.log('Local preview: http://localhost:3000'));

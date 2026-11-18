@@ -27,6 +27,548 @@ const previousMeetings=[
  {day:'12',month:'June',date:'2026-06-12',title:'Regular Board Meeting',time:'10:00 AM',place:'Hamm Institute for American Energy at OSU'},
  {day:'11',month:'Sept',date:'2026-09-11',title:'Regular Board Meeting',time:'10:00 AM',place:'Hamm Institute for American Energy at OSU'}
 ];
+// Sample archive snapshot from regents.okstate.edu/minutes, retrieved November 18, 2026.
+const minutesArchive=[
+  {
+    "date": "2026-10-23",
+    "day": "23",
+    "month": "Oct",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "OSU Institute of Technology",
+      "State Room, Culinary Arts Building",
+      "Okmulgee, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/TarTyP3AFlz2TGBVQpMplzV9tpbffTBpk2cPS5trHSoA"
+      },
+      {
+        "label": "Reception & Dinner Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/u0OGwaOTLt7uI21Nq1xtVyS7wwO0EtkTD2FCHRliHcYA"
+      },
+      {
+        "label": "Breakfast & Lunch Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/oLJxgF6%2FD4C4XiQWTqQVciq4O0egC7e7nha6PUv09HgA"
+      },
+      {
+        "label": "Minutes information",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/info_regarding_oct2026_reg_brd_mtg_mins.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "day": "11",
+    "month": "Sept",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Council Room, 412 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/U1q9AJBRhcEAN0oJft8LXpRvNlim%2F52hIIoo596igEYA"
+      },
+      {
+        "label": "Reception & Dinner Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/d7DJWeyfrPgo1P62wOGZhGqgt29vMUPdD5Z82idPdqkA"
+      },
+      {
+        "label": "Breakfast & Lunch Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/I5ap1zcAZnAotr5utbBv2HvWi6XJLrWJipXBxb3HmucA"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-09-11_regular_brd_mtg_mins.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "day": "28",
+    "month": "Aug",
+    "year": "2026",
+    "title": "Special Board Meeting",
+    "time": "8:30 AM",
+    "location": [
+      "Oklahoma State University",
+      "University House",
+      "1600 N. Washington St.",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/R7Mb61cuDqDVyq9R6dvh1x7O4LTmUp1AxKQ7p6jMrHAA"
+      },
+      {
+        "label": "Reception & Dinner Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/0WgxoedymxckCFNbeyHVqfussPhOeBXy1CxZe7H0izUA"
+      },
+      {
+        "label": "Minutes information",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2026/info_regarding_aug2026_spec_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "day": "12",
+    "month": "June",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Hamm Institute for American Energy at OSU",
+      "300 NE 9th Street",
+      "Oklahoma City, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/oTcg5wgHE4KgXQKUu%2FLiA0rIxzYWlxk%2FsY6N25EaQGEA"
+      },
+      {
+        "label": "Finance Committee Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/0FX1AIQBLOgKigvNG8dIsaFt6X8QYYmrijfifnccnAwA"
+      },
+      {
+        "label": "Reception & Dinner Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/P3HxnEkO3juw0c8NKyTy84pgr8KgoL66oeU8mnw%2FgJ4A"
+      },
+      {
+        "label": "Breakfast & Lunch Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/zpfDO8EPrM9s9HuBqrAJoginamJwtRU7539dHdGnwZ0A"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-06-12-regular-board-meeting-minutes_reduced-size.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "day": "28",
+    "month": "May",
+    "year": "2026",
+    "title": "Special Board Meeting",
+    "time": "9:00 AM",
+    "location": [
+      "Hamm Institute for American Energy at OSU",
+      "Board Room, 5th Floor",
+      "300 NE 9th Street",
+      "Oklahoma City, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/6fQItoQ1fCkzglJW31LopQcbCm28FJmpEI0ObEJNXtQA"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2026/2026-05-28_special_brd_mtg_mins_amended.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "day": "24",
+    "month": "April",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Northeastern Oklahoma A&M College",
+      "Calcagno Family Ballroom, Student Union",
+      "Miami, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Meeting Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/UBChsxHnTV0KbtkUyt0tsdE1akcA0rupPhDdp24MpVAA"
+      },
+      {
+        "label": "Reception & Dinner Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/KxEWph1J2fyuLNi6Ej%2FNND4HXipmx8EcOxEudmvjzCEA"
+      },
+      {
+        "label": "Breakfast & Lunch Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/eK9wcspD8U57vYIFGbt2GU%2FZM48oH6qbPmo8mnSNQioA"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-04-24-Regular-Board-Meeting-Minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "day": "22",
+    "month": "April",
+    "year": "2026",
+    "title": "Special Board Meeting",
+    "time": "1:30 PM",
+    "location": [
+      "Hamm Institute for American Energy at OSU",
+      "Board Room, 5th Floor",
+      "300 NE 9th Street",
+      "Oklahoma City, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://public.onboardmeetings.com/Meeting/CBQakxzHQyjPUU%2FRYYR%2F7eyg3gaztXJ1ckFVkkfDnpEA/uJvJwIP0fRHpmkTvcUNXtB0XvUp8XywWZI8TyZqkO3cA"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2026/2026-04-22-Special-Board-Meeting-Minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-06",
+    "day": "6",
+    "month": "Mar",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Council Room, 412 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-03-06_regular_board_meeting_agenda.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-03-06_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-03-06-Regular-Board-Meeting-Minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-06",
+    "day": "6",
+    "month": "Mar",
+    "year": "2026",
+    "title": "Special Board Meeting",
+    "time": "7:30 AM",
+    "location": [
+      "Oklahoma State University",
+      "Suite 1600, 297 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-03-06_special_brd_mtg_agenda.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2026/2026-03-06-Special-Board-Meeting-Minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-30",
+    "day": "30",
+    "month": "Jan",
+    "year": "2026",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "OSU-Center for Health Sciences",
+      "A.R. and Marylouise Tandy Building, 1111 W. 17th St.",
+      "Tandy Conference Room, 4th Floor",
+      "Tulsa, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-01-30_regular_board_meeting_agenda.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2026/2026-01-30_reg_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-05",
+    "day": "5",
+    "month": "Dec",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Council Room, 412 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-12-05_regular_brd_mtg_agenda_combined.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-12-05_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-12-05_regular_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "day": "24",
+    "month": "Oct",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Connors State College",
+      "Regents Room, A.D. Stone Student Union",
+      "Warner, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-10-24_reg_bd_mtg_agenda_packet.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-10-24_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-10-24_regular_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-12",
+    "day": "12",
+    "month": "Sept",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Langston University",
+      "Multipurpose Room, 142 School of Physical Therapy",
+      "Langston, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-09-12_regular_board_meeting_agenda_website_full.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-09-12_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-09-12_regular_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-22",
+    "day": "22",
+    "month": "Aug",
+    "year": "2025",
+    "title": "Special Board Meeting",
+    "time": "8:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "University House",
+      "1600 N. Washington Street",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-08-21and22_brd_retreat_study_session_agenda.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-08-22_brd_retreat_study_session_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-13",
+    "day": "13",
+    "month": "June",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "OSU-Oklahoma City",
+      "Conference North, 3rd Floor Student Center",
+      "900 N. Portland Avenue",
+      "Oklahoma City, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-06-13_regular_board_meeting_agenda_combined.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-06-12_combined_related_agendas_and_reference_docs.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-06-13_regular_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-03",
+    "day": "3",
+    "month": "June",
+    "year": "2025",
+    "title": "Special Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "OSU-Oklahoma City",
+      "Conference Room 304, 3rd Floor Student Center",
+      "900 N. Portland Avenue",
+      "Oklahoma City, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-06-03_special_board_mtg_agenda.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-06-03_special_brd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-04-25",
+    "day": "25",
+    "month": "April",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma Panhandle State University",
+      "Ballroom, Student Union",
+      "Goodwell, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-04-25_regular_brd_mtg_agenda_combined.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-04-25_related_agendas_r.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-04-25-Regular-Board-Meeting-Minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-03-07",
+    "day": "7",
+    "month": "Mar",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Council Room, 412 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-03-07_regular_bd_mtg_agenda.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-03-07_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-03-07_reg_bd_mtg_minutes.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-02-07",
+    "day": "7",
+    "month": "Feb",
+    "year": "2025",
+    "title": "Special Board Meeting",
+    "time": "9:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Regency Room, 460 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-02-07_special_board_mtg_agenda.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/special-meetings/2025/2025-02-07_special_brd_mtg_minutes2.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-01-31",
+    "day": "31",
+    "month": "Jan",
+    "year": "2025",
+    "title": "Regular Board Meeting",
+    "time": "10:00 AM",
+    "location": [
+      "Oklahoma State University",
+      "Council Room, 412 Student Union",
+      "Stillwater, Oklahoma"
+    ],
+    "documents": [
+      {
+        "label": "Agenda",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-01-31_regular_bd_mtg_agenda.pdf"
+      },
+      {
+        "label": "Related Agendas",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-01-31_related_agendas.pdf"
+      },
+      {
+        "label": "Minutes",
+        "url": "https://regents.okstate.edu/site-files/docs/meetings/2025/2025-01-31_regular_brd_mtg_minutes.pdf"
+      }
+    ]
+  }
+];
 const institutions=[['Connors State College','logos/connors-state-black.svg','https://connorsstate.edu/'],['Langston University','logos/langston-black.png','https://langston.edu/'],['NEO A&M College','logos/neo-black.svg','https://neo.edu/'],['Oklahoma Panhandle State University','logos/opsu-black.svg','https://opsu.edu/'],['Oklahoma State University','logos/osu-black.svg','https://okstate.edu/']];
 const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URLSearchParams(location.search), page=params.get('page')||'home';
@@ -563,6 +1105,12 @@ title='Meet the Regents';content=crumb('Regents Members')+`<section class="cards
 }else if(page==='member'){
 const m=members.find(m=>m.id===params.get('id'));
 if(m){title=m.name;content=crumb('Regents Members')+`<article class="profile regents-container"><div class="row"><div class="col-md-8 profile-content"><h1>${m.name}</h1><h2>${m.position.replace(/^Position \d: /,'')}</h2><p class="term">Current term: ${m.term.split('\n').at(-1)}</p><p>${boardDescription}</p></div><div class="col-md-4"><img src="assets/${m.image}.png" alt="Portrait of ${m.name}"></div></div></article>`;}
+}else if(page==='minutes'){
+const years=[...new Set(minutesArchive.map(meeting=>meeting.year))].sort().reverse();
+const year=years.includes(params.get('year'))?params.get('year'):years[0];
+const archive=minutesArchive.filter(meeting=>meeting.year===year);
+title='Minutes — '+year;
+content=crumb('Minutes')+`<section class="content-page regents-container minutes-page"><h1>Minutes</h1><p>Browse meeting minutes, agendas, and supporting documents by year.</p><form class="minutes-filter" action="index.html" method="get"><input type="hidden" name="page" value="minutes"><div class="minutes-filter__field"><label for="minutes-year">Year</label><select id="minutes-year" name="year" class="form-select">${years.map(value=>`<option value="${value}"${value===year?' selected':''}>${value}</option>`).join('')}</select></div><button type="submit" class="minutes-filter__button">Show year</button></form><div class="minutes-results-heading"><h2 id="minutes-results-title">${year} Meeting Minutes</h2><p>${archive.length} meetings</p></div><ul class="meeting-schedule minutes-schedule" aria-labelledby="minutes-results-title">${archive.map(meeting=>`<li class="meeting-row minutes-row">${meetingDate(meeting)}<div class="meeting-row__summary"><h3>${esc(meeting.title)}</h3><p class="minutes-time">${esc(meeting.time)}</p><p>${meeting.location.map(esc).join('<br>')}</p></div><div class="minutes-documents"><h4 class="visually-hidden">Documents for ${esc(meeting.title)}, ${meeting.month} ${meeting.day}, ${year}, ${meeting.time}</h4><ul>${[...meeting.documents].sort((a,b)=>Number(b.label.startsWith('Minutes'))-Number(a.label.startsWith('Minutes'))).map(doc=>`<li><a href="${esc(doc.url)}">${esc(doc.label)}${/\.pdf(?:$|[?#])/i.test(doc.url)?' <span class="minutes-document-type">(PDF)</span>':''}<span class="visually-hidden"> — ${esc(meeting.title)}, ${meeting.month} ${meeting.day}, ${year}, ${meeting.time}</span></a></li>`).join('')}</ul></div></li>`).join('')}</ul><p class="minutes-archive-link"><a href="https://regents.okstate.edu/minutes">View earlier years in the full minutes archive</a></p></section>`;
 }else if(page==='meetings'){
 title='Upcoming Meetings';
 content=crumb(title)+`<section class="content-page regents-container meetings-page"><h1>Upcoming Meetings</h1><p class="meeting-notice">Note: Under the Open Meeting laws with proper notice these dates, times, and locations may change. Also, Special meetings of the Board of Regents are sometimes scheduled. Contact the Board of Regents’ Office for up-to-date meeting information.</p><ul class="meeting-schedule">${meetings.map(meetingRow).join('')}</ul></section>`;
