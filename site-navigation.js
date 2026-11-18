@@ -33,3 +33,6 @@ menuPanel.addEventListener('hide.bs.collapse',()=>{
   bootstrap.Dropdown.getInstance(button)?.hide();
  });
 });
+
+// A year change updates the archive while retaining a shareable year URL.
+document.querySelector('#minutes-year')?.addEventListener('change',event=>event.target.form.requestSubmit());

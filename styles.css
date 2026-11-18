@@ -278,21 +278,12 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 /* Minutes archive: year picker and document lists share the meeting-page rhythm. */
 .minutes-page { padding-block: 3rem 4rem; }
 .minutes-filter { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-block: 2rem 2.5rem; }
-.minutes-filter__field { width: 12rem; max-width: 100%; }
+.minutes-filter__field { width: 7rem; max-width: 100%; }
 .minutes-filter label { display: block; margin-bottom: .5rem; font-weight: 700; }
-.minutes-filter select { min-height: 48px; border: 2px solid #626262; border-radius: 0; font-size: 1.125rem; color: var(--regents-navy); }
+.minutes-filter select { min-height: 48px; border: 1px solid #ddd; border-radius: 0; font-size: 1.125rem; font-weight: 700; color: #000; }
 .minutes-filter__button { min-height: 48px; padding: .6rem 1.25rem; border: 2px solid var(--regents-navy); background: var(--regents-navy); color: #fff; font-size: 1rem; font-weight: 700; }
 .minutes-filter__button:hover { background: var(--regents-blue); border-color: var(--regents-blue); }
-.minutes-results-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--regents-navy); }
-#main-content .minutes-results-heading :is(h2,p) { margin: 0; }
-#main-content .minutes-row .meeting-row__summary h3 { font: 700 1.125rem/1.5 'Open Sans',sans-serif; margin: 0; }
-#main-content .minutes-row .minutes-time { margin-bottom: .75rem; }
-.minutes-documents ul { list-style: none; margin: 0; padding: 0; }
-.minutes-documents a { display: inline-block; min-height: 32px; padding-block: .2rem; font-size: 1rem; font-weight: 600; text-underline-offset: 3px; }
-.minutes-document-type { font-size: .875rem; font-weight: 400; }
 .minutes-archive-link { padding-top: 2rem; border-top: 1px solid #ddd; }
-@media (min-width:601px) and (max-width:991.98px) { .minutes-documents { grid-column: 2; } }
-@media (max-width:600px) { .minutes-documents a { min-height: 44px; padding-block: .6rem; } }
 
 .kitchen-jump { display:flex; flex-wrap:wrap; gap:.5rem; padding-block:1.5rem 2rem; }
 .kitchen-jump a { display:inline-flex; align-items:center; min-height:44px; padding:.5rem .85rem; border:1px solid #ddd; font-size:.875rem; }
