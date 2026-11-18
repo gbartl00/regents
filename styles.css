@@ -252,6 +252,8 @@ a:hover { color: var(--regents-blue); text-decoration-thickness: 2px; }
 #main-content .meeting-documents h2 { font-size: 2.25rem; margin-bottom: 1.25rem; }
 .meeting-documents ul { list-style: none; padding: 0; margin: 0; }
 .meeting-documents li { padding-block: .5rem; }
+.meeting-document-link { display: inline-block; min-height: 32px; padding-block: .25rem; font-size: 1rem; font-weight: 700; text-underline-offset: 3px; }
+@media (max-width:600px) { .meeting-document-link { min-height: 44px; } }
 .meeting-document-label { display: inline-flex; align-items: baseline; gap: .4rem; color: var(--regents-navy); font-size: .875rem; font-weight: 700; text-transform: uppercase; }
 .meeting-document-label::before { content: '›' / ''; font-size: 1.4em; line-height: 1; }
 #main-content .meeting-documents-note { margin: 1rem 0 0; font-size: .875rem; }
